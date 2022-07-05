@@ -10,6 +10,7 @@ export function Header() {
 			
 				<img src={logo} alt="Logo"/>
 				<div className="bntsHeader">
+					<button>HOME</button>
 					<button>PROJECTS</button>
 					<button>SOBRE MIN</button>
 					<button>CONTATE-ME</button>

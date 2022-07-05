@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import { darken } from "polished"
-
-
+import backgroundImg from "../../assets/Bitmap.svg"
+ 
 export const Container = styled.div`
    display: flex;
    max-width: 1200px;
@@ -33,9 +32,10 @@ export const Container = styled.div`
    }
 
    .welcome {
-      background-image: url('/Bitmap.jpg');
-      width: 900px;
-      height: 450px;
+      background-image: url(${backgroundImg});
+      background-size: cover;
+      width: 850px;
+      height: 400px;
       
       border-radius: 25px;
       margin: 3rem;
@@ -45,12 +45,22 @@ export const Container = styled.div`
       justify-content: center;
 
       .conteudo {
-         padding: 1rem;
+         padding: 2rem;
          display: flex;
          flex-direction: column;
          justify-content: space-between;
          z-index: 3;
+         background-image: linear-gradient(to bottom right, rgba(156, 39, 176, 0.7), rgba(101, 31, 255, 0.7));
          border-radius: 25px;
+         height: 90%;
+         color: #fff;
+
+         h2 {
+            font-weight: 500;
+         }
+         h4 {
+            font-weight: 400;
+         }
       }
    }
 

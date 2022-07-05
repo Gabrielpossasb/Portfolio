@@ -11,19 +11,19 @@ export function Home() {
             <button
                type="button"
             >
-               <House size={26} />
+               <House size={26} weight="fill"/>
             </button>
 
             <button
                type="button"
             >
-               <RocketLaunch size={26} />
+               <RocketLaunch size={26} weight="fill"/>
             </button>
 
             <button
                type="button"
             >
-               <Folder size={26} />
+               <Folder size={26} weight="fill"/>
             </button>
 
             <button
@@ -35,7 +35,7 @@ export function Home() {
             <button
                type="button"
             >
-               <Chats size={26} />
+               <Chats size={26} weight="fill"/>
             </button>
          </div>
 
@@ -47,8 +47,8 @@ export function Home() {
                <h4>Tenho 18 anos, estou extremamente empolgado em aprender </h4>
 
                <div className="icons">
-                  <a href="https://www.linkedin.com/in/gabriel-borges-p/" target='_blank'><LinkedinLogo size={32} weight="fill" color="#0077B5" /></a>
-                  <a href="https://github.com/Gabrielpossasb" target='_blank'><GithubLogo size={32} weight="fill" color="#21262d" /></a>
+                  <a href="https://www.linkedin.com/in/gabriel-borges-p/" target='_blank'><LinkedinLogo size={32} weight="fill" color="#ffffff" /></a>
+                  <a href="https://github.com/Gabrielpossasb" target='_blank'><GithubLogo size={32} weight="fill" color="#ffffff" /></a>
                </div>
             </div>  
          </div>
