@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.158b8327.js",
+    "main.js": "/Portfolio/static/js/main.afd7d84d.js",
     "static/media/Bitmap.svg": "/Portfolio/static/media/Bitmap.195006bb9ae6f0d76cd2a5f923507a5b.svg",
     "static/media/Plataforma_aulas.png": "/Portfolio/static/media/Plataforma_aulas.573b377591c2e032aa98.png",
     "static/media/Portal-noticias.png": "/Portfolio/static/media/Portal-noticias.9911f1404ff5adf4dfde.png",
@@ -9,9 +9,9 @@
     "static/media/logo.svg": "/Portfolio/static/media/logo.5e11145e5f11e1f9f9f81a70ca43e072.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/Oval.svg": "/Portfolio/static/media/Oval.512299a234be71dd3abfd0feabb4fac8.svg",
-    "main.158b8327.js.map": "/Portfolio/static/js/main.158b8327.js.map"
+    "main.afd7d84d.js.map": "/Portfolio/static/js/main.afd7d84d.js.map"
   },
   "entrypoints": [
-    "static/js/main.158b8327.js"
+    "static/js/main.afd7d84d.js"
   ]
 }
