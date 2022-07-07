@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.3f024897.js",
+    "main.js": "/Portfolio/static/js/main.8b490e2c.js",
     "static/media/Bitmap.svg": "/Portfolio/static/media/Bitmap.195006bb9ae6f0d76cd2a5f923507a5b.svg",
-    "static/media/Screenshot_1.png": "/Portfolio/static/media/Screenshot_1.573b377591c2e032aa98.png",
+    "static/media/Plataforma_aulas.png": "/Portfolio/static/media/Plataforma_aulas.573b377591c2e032aa98.png",
+    "static/media/Portal-noticias.png": "/Portfolio/static/media/Portal-noticias.9911f1404ff5adf4dfde.png",
+    "static/media/Calculadora.png": "/Portfolio/static/media/Calculadora.5fc4302038af7f9d1302.png",
+    "static/media/Player-music.png": "/Portfolio/static/media/Player-music.6f9d4aa9b1e9163b4b8f.png",
     "static/media/logo.svg": "/Portfolio/static/media/logo.5e11145e5f11e1f9f9f81a70ca43e072.svg",
     "index.html": "/Portfolio/index.html",
-    "main.3f024897.js.map": "/Portfolio/static/js/main.3f024897.js.map"
+    "main.8b490e2c.js.map": "/Portfolio/static/js/main.8b490e2c.js.map"
   },
   "entrypoints": [
-    "static/js/main.3f024897.js"
+    "static/js/main.8b490e2c.js"
   ]
 }
