@@ -12,6 +12,10 @@ export const GlobalStyle = createGlobalStyle`
 		--text-purple: #651FFF;
 		--text-back: #D1C4E9;
 		--text-grey: #B3B3B3;
+		--text-fundo: rgba(0, 0, 0, 0.20);
+		--line-purple: #7221EC;
+		--gradient-7: linear-gradient(to bottom right, rgba(156, 39, 176, 0.3), rgba(101, 31, 255, 0.3));
+		--gradient-10: linear-gradient(to bottom right, rgba(156, 39, 176, 1), rgba(101, 31, 255, 1));
 		
 		
 	}
@@ -40,6 +44,7 @@ export const GlobalStyle = createGlobalStyle`
 	body, input, textarea, button {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 400;
+		color: #fff;
 	}
 
 	button {

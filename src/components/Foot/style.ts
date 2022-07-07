@@ -3,6 +3,8 @@ import { darken } from "polished"
 
 export const Container = styled.div`
    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap-reverse;
    margin-top: 10rem;
    padding-bottom: 8rem;
    max-width: 1100px;
@@ -19,6 +21,7 @@ export const Container = styled.div`
    .meusDados {
       display: flex;
       height: 100%;
+      min-width: 230px;
       max-width: 250px;
       color: #fff;
       align-items: center;
