@@ -1,3 +1,3 @@
 # Portfolio
 
-link: <a href="https://gabrielpossasb.github.io/Portfolio/" target="_blank">OPEN</a>
+link: <a target="_blank" href="https://gabrielpossasb.github.io/Portfolio/" >OPEN</a>
