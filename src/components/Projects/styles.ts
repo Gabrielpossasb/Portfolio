@@ -22,8 +22,7 @@ export const Container = styled.div`
    .line, .line- {
       width: 2px;
       height: 8rem;
-      border: 2px solid var(--line-purple);
-      background: gray;
+      border-left: 2px solid var(--line-purple);
       margin-left: 2rem;
    }
    .line- {
@@ -40,13 +39,12 @@ export const Container = styled.div`
       border-right:  1px solid var(--line-purple);
       border-radius: 50px;
       gap: 3rem;
-   background: var(--background);
-
+      background: var(--background);
       
    }
 
    .projeto {
-      background: var(--gradient-7);
+      background-image: var(--gradient-7);
       border-radius: 2rem;
       padding: 2rem 1rem;
       margin: 2rem 3rem 2rem 3rem;
@@ -54,9 +52,11 @@ export const Container = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      transition: background-image 0.2s;
 
       &:hover {
-         background: var(--gradient-10);
+         background-image: var(--gradient-10);
+         
       }
 
       img {

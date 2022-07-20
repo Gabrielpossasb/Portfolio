@@ -1,7 +1,10 @@
 import styled from "styled-components"
+import { ThemeSelectProps } from "../../App"
 import backgroundImg from "../../assets/Bitmap.svg"
  
-export const Container = styled.div`
+
+
+export const Container = styled.div <ThemeSelectProps>`
    display: flex;
    max-width: 1200px;
    max-height: 580px;
@@ -17,10 +20,10 @@ export const Container = styled.div`
       margin-top: 2rem;
       padding: 2rem 0.5rem;
       border-radius: 15px;
-      background: var(--nav-side);
+      background: ${(props) => props.theme.navSide};
 
       button {
-         background: var(--nav-side);
+         background: ${(props) => props.theme.navSide};
          border: 0;
          border-radius: 50px;
          color: var(--pink-light);
@@ -34,17 +37,17 @@ export const Container = styled.div`
    }
 
    .welcome {
-      background-image: url(${backgroundImg});
       background-size: cover;
       width: 850px;
       height: 400px;
-      border: 7px solid var(--line-purple);
-      border-radius: 25px;
+      background-image: url(${backgroundImg});
+      border-radius: 25px; 
       margin: 3rem 3rem 0 3rem;
       padding: 2rem;
-      
       background-color: gray;
       justify-content: center;
+
+      
 
       .conteudo {
          padding: 2rem;
@@ -52,7 +55,7 @@ export const Container = styled.div`
          flex-direction: column;
          justify-content: space-between;
          z-index: 3;
-         background-image: linear-gradient(to bottom right, rgba(156, 39, 176, 0.7), rgba(101, 31, 255, 0.7));
+         background-image: linear-gradient(to bottom right, ${(props) => props.theme.navSide}, ${(props) => props.theme.light});
          border-radius: 25px;
          height: 90%;
          color: #fff;

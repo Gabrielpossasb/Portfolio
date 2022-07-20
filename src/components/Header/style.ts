@@ -1,12 +1,16 @@
 import styled from "styled-components";
+import { darken} from 'polished'
+import { ThemeSelectProps } from "../../App";
 
-export const Container = styled.header`
-  background: var(--background-header);
+
+export const Container = styled.header <ThemeSelectProps>`
+  background: ${(props) => props.theme.background};
   
 
 `;
 
-export const Content = styled.div`
+
+export const Content = styled.div <ThemeSelectProps>`
   justify-content: space-between;
   padding: 2rem 4rem;
   flex-direction: row;
@@ -21,12 +25,12 @@ export const Content = styled.div`
   }
   
   button {
-    background: var(--background-header);
+    background: ${(props) => props.theme.background};
     font-size: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 1rem;
     border: 0;
-    color: var(--text-purple);
+    color: ${(props) => props.theme.textFundo};
     transition: filter 0.2s;
 
     &:hover {
@@ -36,7 +40,14 @@ export const Content = styled.div`
   }
 
   .bntsHeader {
-    display: 1;
+    display: flex;
+    gap: 2rem;
+
     
+
   }
+
+  
+  
+ 
 `;

@@ -1,18 +1,18 @@
 import { Chats, Folder, GithubLogo, House, LinkedinLogo, RocketLaunch, UserCircle } from "phosphor-react";
 import { Container } from "./styles";
 
-import homeImg from "../../assets/Bitmap.svg"
 import { Projects } from "../Projects";
 import { useState } from "react";
 import { Skills } from "../Skills";
+import { ThemeSelectProps } from "../../App";
 
 
-export function Home() {
+export function Home({theme}: ThemeSelectProps) {
    const [sumary, setSumary] = useState('');
 
    return(
       <div>
-      <Container>
+      <Container theme={theme}>
          <div className="sideBar">
             <button
                type="button"
@@ -74,10 +74,7 @@ export function Home() {
      {
       (sumary==='skills')?<Skills/>:<div/> 
      }
-     {
-      (sumary==='sobre')?<Projects/>:<div/> 
-     }
-      
+     
       </div>
    );
 }
