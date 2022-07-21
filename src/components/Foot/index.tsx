@@ -2,11 +2,12 @@ import { Container } from "./style";
 
 import logo from "../../assets/logo.svg"
 import { GithubLogo, LinkedinLogo } from "phosphor-react";
+import { ThemeSelectProps } from "../../App";
 
 
-export function Foot() {
+export function Foot({theme}: ThemeSelectProps) {
    return(
-      <Container>
+      <Container theme={theme}>
          <div className="meusDados">
             
             <img src={logo} alt="logo"/>

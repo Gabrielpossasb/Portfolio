@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ThemeConsumer } from 'styled-components';
 import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { GlobalStyle } from './styles/global';
@@ -54,7 +53,7 @@ export function App() {
 		button:'#b19b21',
 		border: '#cbce14',
 		navSide: '#8b6f10',
-		light: 'rgba(156, 39, 176, 0.8)',
+		light: '#c2a819',
 		},
 	];
 	
@@ -81,7 +80,7 @@ export function App() {
 		<header>
 			<Header theme={theme} setarTheme={(e) => handleSetTheme(e)}/>
 			<Dashboard theme={theme}/>
-			<GlobalStyle/>
+			<GlobalStyle />
 		</header>
 	);
 }

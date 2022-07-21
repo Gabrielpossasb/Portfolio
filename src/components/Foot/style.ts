@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { darken } from "polished"
+import { ThemeSelectProps } from "../../App";
 
-export const Container = styled.div`
+export const Container = styled.div  <ThemeSelectProps>`
    display: flex;
    flex-direction: row;
    flex-wrap: wrap-reverse;
@@ -40,7 +41,7 @@ export const Container = styled.div`
       }
 
       .s {
-         color: var(--text-purple);
+         color: ${(props)=>props.theme.textFundo};
       }
    }
 
@@ -77,7 +78,7 @@ export const Container = styled.div`
       }     
       
       &:focus{
-         border-color: var(--text-purple);
+         border-color: ${(props)=>props.theme.textFundo};
          outline: 0;
       }
 
@@ -87,7 +88,7 @@ export const Container = styled.div`
    
 
    button {
-      background: #311B92;
+      background: ${(props)=>props.theme.navSide};
       border: 0;
       border-radius: 1rem;
       padding: 0.5rem 5rem;
@@ -110,7 +111,7 @@ export const Container = styled.div`
    }
 
    .Me {
-      color: var(--text-purple);
+      color: ${(props)=>props.theme.textFundo};
    }
 
    div.dotted {

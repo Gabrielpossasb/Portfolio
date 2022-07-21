@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Container } from "./styles";
 import { IoEnterOutline } from 'react-icons/io5';
+import { ThemeSelectProps } from "../../App";
 
-export function Projects() {
+export function Projects({theme}: ThemeSelectProps) {
    const [projetos, setprojetos] = useState([
       {
         img: require('./prints/Plataforma_aulas.png'),
@@ -40,7 +41,7 @@ export function Projects() {
    ]);
 
    return (
-      <Container>
+      <Container theme={theme}>
          <div className="content">
             <div className="line"></div>
             <h1>PROJETOS</h1>

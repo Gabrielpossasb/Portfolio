@@ -66,13 +66,13 @@ export function Home({theme}: ThemeSelectProps) {
          </div>
       </Container>
      {
-      (sumary==='projects')?<Projects/>:<div/> 
+      (sumary==='projects')?<Projects theme={theme}/>:<div/> 
      }
      {
       (sumary==='home')?<div/>:<div/> 
      }
      {
-      (sumary==='skills')?<Skills/>:<div/> 
+      (sumary==='skills')?<Skills />:<div/> 
      }
      
       </div>

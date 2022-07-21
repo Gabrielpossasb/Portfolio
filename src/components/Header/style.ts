@@ -4,7 +4,7 @@ import { ThemeSelectProps } from "../../App";
 
 
 export const Container = styled.header <ThemeSelectProps>`
-  background: ${(props) => props.theme.background};
+  background: var(--background-header);
   
 
 `;

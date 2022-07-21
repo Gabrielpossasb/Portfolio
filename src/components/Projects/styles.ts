@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { ThemeSelectProps } from "../../App";
 
-export const Container = styled.div`
+export const Container = styled.div <ThemeSelectProps>`
    margin: 0;
    border-bottom: 2px solid var(--line-purple);
 
@@ -12,8 +13,19 @@ export const Container = styled.div`
       
 
       h1 {
-         border-top: 3px solid var(--line-purple);
+         /*
+         border-width: 3px;
+         border-style: solid;
+         border-image: linear-gradient(to right,${(props) => props.theme.navSide}, ${(props) => props.theme.light}) 1;
          border-radius: 2rem;
+         */
+         background: 
+            linear-gradient(var(--background), var(--background)) padding-box,
+            linear-gradient(to right, ${(props) => props.theme.navSide}, ${(props) => props.theme.light}) border-box;
+         border-radius: 2rem;
+         border: 4px solid transparent;
+
+
          padding: 0.5rem 10rem;
          font-size: 3rem;
       }
@@ -22,12 +34,12 @@ export const Container = styled.div`
    .line, .line- {
       width: 2px;
       height: 8rem;
-      border-left: 2px solid var(--line-purple);
+      border-width: 3px;
+         border-style: solid;
+         border-image: linear-gradient(to bottom right,${(props) => props.theme.navSide}, ${(props) => props.theme.light}) 1;
       margin-left: 2rem;
    }
-   .line- {
-      border: 1px solid var(--line-purple);
-   }
+   
 
    .projetosArea {
       margin-top: 6rem;

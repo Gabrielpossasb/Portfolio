@@ -12,7 +12,7 @@ export function Dashboard({theme}: ThemeSelectProps) {
 		<Container>
 			<Home theme={theme}/>
 			
-			<Foot/>
+			<Foot theme={theme}/>
 		</Container>
 	);
 }
