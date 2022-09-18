@@ -1,10 +1,11 @@
 <div align='center'>
 
-   :construction: **Projeto em desenvolvimento** :construction:
-
-   # Portifólio
+   ### :construction: **Projeto em desenvolvimento** :construction: ###
+   <br/>
+   
+   # Portfólio
       
-   #### Meu portifólio, com funcionalidade de themas feita com React  ####
+   #### Meu portfólio, com funcionalidade de themas feita com React  ####
 
    :link: <http://portfolio-gabrielpossasb.vercel.app/> :link:
 </div>
