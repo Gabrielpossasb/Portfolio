@@ -1,7 +1,8 @@
 import ReactModal from "react-modal";
 import { Container, Content } from "./style";
 import  logo  from "../../assets/logo.svg"
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { MyThemeContext } from "../../hooks/useThemeApi";
 
 ReactModal.setAppElement('#root');
 
@@ -18,12 +19,20 @@ interface ThemeProps {
  
 
 export function Header({theme, setarTheme }: ThemeProps) {
+	const { myTheme, selectMyTheme } = useContext(MyThemeContext)
+
 	const [modalOpen, setModalOpen ] = useState(false);
-	const [themeSelect, setThemeSelect] = useState('yellow')
+	const [themeSelect, setThemeSelect] = useState('purple')
+
+	function handleSetTheme(id: string) {
+		selectMyTheme(
+			id,
+		);
+	}
 
 	return(
-		<Container theme={theme}>
-			<Content theme={theme}>
+		<Container theme={myTheme}>
+			<Content theme={myTheme}>
 			
 				<img src={logo} alt="Logo"/>
 				<div className="bntsHeader">
@@ -46,9 +55,7 @@ export function Header({theme, setarTheme }: ThemeProps) {
 							<button onClick={() => setThemeSelect('purple')} className='themPurple'></button>
 							<button onClick={() => setThemeSelect('cian')} className='themCian'></button>
 						</div>
-						<button onClick={() => 
-							setarTheme(themeSelect)
-						}>
+						<button onClick={() => handleSetTheme(themeSelect)}>
 							SET
 						</button>
 

@@ -1,0 +1,38 @@
+[
+	{
+		"id": "red",
+		"background": "#1D1D1E",
+		"textFundo":"#cc1616",
+		"button":"#c72e2e",
+		"border": "#862f2f",  
+		"navSide": "#861c18",
+		"light": "rgba(156, 39, 176, 0.7)"
+	},
+	{
+		"id": "cian",
+		"background": "#1D1D1E",
+		"textFundo":"#2dd9e6",
+		"button":"#155d63",
+		"border": "#62afb4",
+		"navSide": "#168488",
+		"light": "rgba(156, 39, 176, 0.7)"
+	},
+	{
+		"id": "purple",
+		"background": "#1D1D1E",
+		"textFundo": "#651FFF",
+		"button":"#461183",
+		"border": "#a354c2",
+		"navSide": "#311B92",
+		"light": "rgba(156, 39, 176, 0.7)"
+	},
+	{
+		"id": "yellow",
+		"background": "#1D1D1E",
+		"textFundo":"#f7d61e",
+		"button":"#b19b21",
+		"border": "#cbce14",
+		"navSide": "#cca216",
+		"light": "#bf0fd65e"
+	}
+]

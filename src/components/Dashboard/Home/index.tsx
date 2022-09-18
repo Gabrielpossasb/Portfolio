@@ -1,36 +1,47 @@
 import { Chats, Folder, GithubLogo, House, LinkedinLogo, RocketLaunch, UserCircle } from "phosphor-react";
 import { Container } from "./styles";
 
-import { Projects } from "../Projects";
-import { useState } from "react";
-import { Skills } from "../Skills";
-import { ThemeSelectProps } from "../../App";
+import { Projects } from "../../Projects";
+import { useState, createContext, useContext } from "react";
+import { Skills } from "../../Skills";
+import { ThemeSelectProps } from "../../../App";
+import { MyThemeContext } from "../../../hooks/useThemeApi";
 
 
 export function Home({theme}: ThemeSelectProps) {
+   const { myTheme, selectMyTheme } = useContext(MyThemeContext)
+
    const [sumary, setSumary] = useState('');
+
+   function handleSetTheme(id: string, InfoSelect: string) {
+      setSumary(InfoSelect)
+
+      selectMyTheme(
+         id
+      )
+   }
 
    return(
       <div>
-      <Container theme={theme}>
+      <Container theme={myTheme}>
          <div className="sideBar">
             <button
                type="button"
-               onClick={()=>setSumary('house')}
+               onClick={()=>handleSetTheme('cian', 'house')}
             >
                <House size={26} weight="fill"/>
             </button>
 
             <button
                type="button"
-               onClick={()=>setSumary('skills')}
+               onClick={()=>handleSetTheme('purple', 'skills')}
             >
                <RocketLaunch size={26} weight="fill"/>
             </button>
 
             <button
                type="button"
-               onClick={()=>setSumary('projects')}
+               onClick={()=>handleSetTheme('red', 'projects')}
             >
                <Folder size={26} weight="fill"/>
             </button>
@@ -44,7 +55,7 @@ export function Home({theme}: ThemeSelectProps) {
 
             <button
                type="button"
-               onClick={()=>setSumary('contato')}
+               onClick={()=>handleSetTheme('yellow', 'contato')}
             >
                <Chats size={26} weight="fill"/>
             </button>

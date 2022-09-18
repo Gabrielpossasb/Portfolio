@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { ThemeSelectProps } from "../../App"
-import backgroundImg from "../../assets/Bitmap.svg"
+import { ThemeSelectProps } from "../../../App"
+import backgroundImg from "../../../assets/Bitmap.svg"
  
 
-
 export const Container = styled.div <ThemeSelectProps>`
+
    display: flex;
    max-width: 1200px;
    max-height: 580px;
@@ -13,6 +13,7 @@ export const Container = styled.div <ThemeSelectProps>`
    justify-content: center;
    margin-top: 2rem;
 
+   
    .sideBar {
       display: flex;
       flex-direction: column;
