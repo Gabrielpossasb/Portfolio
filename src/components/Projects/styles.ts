@@ -45,10 +45,10 @@ export const Container = styled.div <ThemeSelectProps>`
       margin-top: 6rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      border-bottom: 6px solid var(--line-purple);
-      border-top: 6px solid var(--line-purple);
-      border-left:  1px solid var(--line-purple);
-      border-right:  1px solid var(--line-purple);
+      border-bottom: 6px solid ${(props) => props.theme.light};
+      border-top: 6px solid ${(props) => props.theme.light};
+      border-left:  1px solid ${(props) => props.theme.light};
+      border-right:  1px solid ${(props) => props.theme.light};
       border-radius: 50px;
       gap: 3rem;
       background: var(--background);
@@ -56,7 +56,7 @@ export const Container = styled.div <ThemeSelectProps>`
    }
 
    .projeto {
-      background-image: var(--gradient-7);
+      background-image: linear-gradient(to bottom right, ${(props) => props.theme.navSide}, ${(props) => props.theme.light});
       border-radius: 2rem;
       padding: 2rem 1rem;
       margin: 2rem 3rem 2rem 3rem;
@@ -64,10 +64,10 @@ export const Container = styled.div <ThemeSelectProps>`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      transition: background-image 0.2s;
+      transition: background-image 1s;
 
       &:hover {
-         background-image: var(--gradient-10);
+         background-image: linear-gradient(to bottom right, ${(props) => props.theme.navSide}, ${(props) => props.theme.button});
          
       }
 
