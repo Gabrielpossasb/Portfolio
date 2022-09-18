@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabrielpossasb.github.io/Portfolio",
+  "homepage": "http://portfolio-gabrielpossasb.vercel.app/",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "ionicons": "^6.0.2",
