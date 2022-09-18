@@ -2,12 +2,11 @@ import { Container } from "./style";
 
 import logo from "../../assets/logo.svg"
 import { GithubLogo, LinkedinLogo } from "phosphor-react";
-import { ThemeSelectProps } from "../../App";
 import { useContext } from "react";
 import { MyThemeContext } from "../../hooks/useThemeApi";
 
 
-export function Foot({theme}: ThemeSelectProps) {
+export function Foot() {
    const { myTheme } = useContext(MyThemeContext)
 
    return(

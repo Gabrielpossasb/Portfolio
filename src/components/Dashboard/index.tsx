@@ -7,12 +7,12 @@ import { Container } from "./style";
 
 
 
-export function Dashboard({theme}: ThemeSelectProps) {
+export function Dashboard() {
 	return (
 		<Container>
-			<Home theme={theme}/>
+			<Home/>
 			
-			<Foot theme={theme}/>
+			<Foot/>
 		</Container>
 	);
 }

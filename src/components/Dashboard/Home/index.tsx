@@ -4,11 +4,10 @@ import { Container } from "./styles";
 import { Projects } from "../../Projects";
 import { useState, createContext, useContext } from "react";
 import { Skills } from "../../Skills";
-import { ThemeSelectProps } from "../../../App";
 import { MyThemeContext } from "../../../hooks/useThemeApi";
 
 
-export function Home({theme}: ThemeSelectProps) {
+export function Home() {
    const { myTheme, selectMyTheme } = useContext(MyThemeContext)
 
    const [sumary, setSumary] = useState('');
@@ -77,7 +76,7 @@ export function Home({theme}: ThemeSelectProps) {
          </div>
       </Container>
      {
-      (sumary==='projects')?<Projects theme={theme}/>:<div/> 
+      (sumary==='projects')?<Projects/>:<div/> 
      }
      {
       (sumary==='home')?<div/>:<div/> 

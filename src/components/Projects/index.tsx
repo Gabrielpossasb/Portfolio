@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Container } from "./styles";
 import { IoEnterOutline } from 'react-icons/io5';
-import { ThemeSelectProps } from "../../App";
+import { MyThemeContext } from "../../hooks/useThemeApi";
 
-export function Projects({theme}: ThemeSelectProps) {
+export function Projects() {
+   const { myTheme } = useContext(MyThemeContext)
+
    const [projetos, setprojetos] = useState([
       {
         img: require('./prints/Plataforma_aulas.png'),
@@ -41,16 +43,16 @@ export function Projects({theme}: ThemeSelectProps) {
    ]);
 
    return (
-      <Container theme={theme}>
+      <Container theme={myTheme}>
          <div className="content">
             <div className="line"></div>
             <h1>PROJETOS</h1>
             
             <div className="projetosArea">            
                {
-               projetos.map(val => {
-                  return(
-                     <div className="projeto">
+               projetos.map(val => (
+                  
+                     <div key={val.name} className="projeto">
                         <h2>{val.name}</h2>
                         <img src={val.img}/>
                         
@@ -61,8 +63,7 @@ export function Projects({theme}: ThemeSelectProps) {
                         </button>
                      </div>
                   )
-               })    
-               }
+               )}
                
             </div>
             <div className="line-"></div>

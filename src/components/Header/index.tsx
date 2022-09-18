@@ -18,7 +18,7 @@ interface ThemeProps {
  }
  
 
-export function Header({theme, setarTheme }: ThemeProps) {
+export function Header() {
 	const { myTheme, selectMyTheme } = useContext(MyThemeContext)
 
 	const [modalOpen, setModalOpen ] = useState(false);
