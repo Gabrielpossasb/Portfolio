@@ -1,5 +1,7 @@
 <div align='center'>
 
+   :construction: **Projeto em desenvolvimento** :construction:
+
    # Portifólio
       
    #### Meu portifólio, com funcionalidade de themas feita com React  ####
