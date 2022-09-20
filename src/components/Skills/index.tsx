@@ -1,11 +1,15 @@
 import { Container, Content } from "./styles";
 import { DiCss3, DiReact  } from "react-icons/di";
 import Oval from "../../assets/Oval.svg"
+import { useContext } from "react";
+import { MyThemeContext } from "../../hooks/useThemeApi";
 
 export function Skills() {
+   const { myTheme } = useContext(MyThemeContext)
+
    return (
-      <Container>
-         <Content>
+      <Container theme={myTheme}>
+         <Content theme={myTheme}>
             <h1 className="titleS">SKILLS</h1>
             <div></div>
            

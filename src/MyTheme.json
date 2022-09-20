@@ -5,26 +5,32 @@
 		"textFundo":"#cc1616",
 		"button":"#c72e2e",
 		"border": "#862f2f",  
-		"navSide": "#861c18",
-		"light": "rgba(187, 32, 92, 0.7)"
+		"navSide": "#cf231daf",
+		"light": "rgba(187, 32, 92, 0.7)",
+		"line": "#b32727"
+		
 	},
 	{
 		"id": "cian",
 		"background": "#1D1D1E",
 		"textFundo":"#2dd9e6",
-		"button":"#155d63",
+		"button":"#1a7a83",
 		"border": "#62afb4",
-		"navSide": "#168488",
-		"light": "rgba(156, 39, 176, 0.7)"
+		"navSide": "#239397",
+		"light": "rgba(156, 39, 176, 0.7)",
+		"line": "#077981"
+		
 	},
 	{
 		"id": "purple",
 		"background": "#1D1D1E",
-		"textFundo": "#651FFF",
+		"textFundo": "#6015b6",
 		"button":"#461183",
 		"border": "#a354c2",
-		"navSide": "#311B92",
-		"light": "rgba(156, 39, 176, 0.7)"
+		"navSide": "#4b1ba5c5",
+		"light": "rgba(156, 39, 176, 0.7)",
+		"line": "#6c22c262"
+		
 	},
 	{
 		"id": "yellow",
@@ -33,6 +39,8 @@
 		"button":"#b19b21",
 		"border": "#cbce14",
 		"navSide": "#cca216",
-		"light": "#bf0fd65e"
+		"light": "#bf0fd65e",
+		"line": "#dfac07"
+		
 	}
 ]

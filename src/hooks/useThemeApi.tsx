@@ -8,6 +8,7 @@ interface MyTheme {
    border: string,
    navSide: number,
    light: number,
+   line: number,
 }
 
 interface MyThemeProviderProps {
@@ -26,14 +27,19 @@ export const MyThemeContext = createContext<MyThemeContextData>(
 export function MyThemeProvider({children}: MyThemeProviderProps) {
    const MyThemeRequest: MyTheme[] = require('../MyTheme.json')
 
-   const [ myTheme, setMyTheme] = useState<MyTheme>(MyThemeRequest[2])
+   const [ myTheme, setMyTheme] = useState<MyTheme>(MyThemeRequest[1])
 
-   function selectMyTheme(id: string) {
+   async function selectMyTheme(id: string) {
+      const deleyzin = myTheme
       const select = MyThemeRequest.filter((data: MyTheme) => {
          return (data.id === id)
       })
-      console.log(select)
       setMyTheme(select[0])
+      await new Promise(resolve => setTimeout(resolve, 500));
+      setMyTheme(deleyzin)
+      await new Promise(resolve => setTimeout(resolve, 350));
+      setMyTheme(select[0])
+      
    }
 
    return (

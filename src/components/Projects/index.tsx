@@ -8,36 +8,36 @@ export function Projects() {
 
    const [projetos, setprojetos] = useState([
       {
-        img: require('./prints/Plataforma_aulas.png'),
-        name: 'Plataforma de Aulas',
+        img: require('./prints/worldtrip-Home.png'),
+        name: 'WorldTrip',
         width:0,
         height:0,
         ratio:0,
-        website:'http://plataforma-aulas-rocketseat.vercel.app/'
+        website:'http://worldtrip-omega.vercel.app/'
       },
        {
-         img: require('./prints/Player-music.png'),
+         img: require('./prints/Plataforma_aulas.png'),
          name: 'Plataforma de Aulas',
          width:0,
          height:0,
          ratio:0,
-         website:'https://gabrielpossasb.github.io/Player-Music/'
+         website:'http://plataforma-aulas-rocketseat.vercel.app/'
        },
        {
-         img: require('./prints/Portal-noticias.png'),
-         name: 'Plataforma de Aulas',
+         img: require('./prints/dashgo-Dashboard.png'),
+         name: 'DashGO',
          width:0,
          height:0,
          ratio:0,
-         website:'https://gabrielpossasb.github.io/Portal-Noticias/'
+         website:'https://dash-go-ecru.vercel.app/'
        },
        {
-         img: require('./prints/Calculadora.png'),
-         name: 'Plataforma de Aulas',
+         img: require('./prints/dtmonet.png'),
+         name: 'dt money',
          width:0,
          height:0,
          ratio:0,
-         website:'https://gabrielpossasb.github.io/Calculadora/'
+         website:'http://aplicacao-balanco-de-contas.vercel.app/'
        },
        
    ]);
@@ -46,7 +46,6 @@ export function Projects() {
       <Container theme={myTheme}>
          <div className="content">
             <div className="line"></div>
-            <h1>PROJETOS</h1>
             
             <div className="projetosArea">            
                {
@@ -54,13 +53,17 @@ export function Projects() {
                   
                      <div key={val.name} className="projeto">
                         <h2>{val.name}</h2>
-                        <img src={val.img}/>
+                        <img src={val.img} />
                         
                         <button>
                            <a target="_blank" href={val.website}>
                               <IoEnterOutline size={32} color='white'/>
                            </a>
+                           
                         </button>
+                        <a target="_blank" href={val.website}>
+                              GIT 
+                           </a>
                      </div>
                   )
                )}

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
+import { NavigationProvider } from './hooks/useNavigation';
 import { MyThemeProvider } from './hooks/useThemeApi';
 
 const root = ReactDOM.createRoot(
@@ -9,9 +10,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<React.StrictMode>
-		<MyThemeProvider>
-			<App />
-		</MyThemeProvider>
+		<NavigationProvider>
+			<MyThemeProvider>
+				<App />
+			</MyThemeProvider>
+		</NavigationProvider>
 	</React.StrictMode>
 );
 

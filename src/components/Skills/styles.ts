@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { ThemeSelectProps } from "../../App";
 
-export const Container = styled.div`
+
+export const Container = styled.div <ThemeSelectProps>`
    margin: 0;
-   border-bottom: 2px solid var(--line-purple);
+   border-bottom: 2px solid ${(props) => props.theme.button};
 `
 
-export const Content = styled.div`
+export const Content = styled.div <ThemeSelectProps>`
    
    display: flex;
    width: 1000px;
@@ -15,6 +17,7 @@ export const Content = styled.div`
    //background: gray;
    flex-direction: row;
    
+   
 
    .titleS {
       transform: rotate(-90deg);
@@ -22,7 +25,7 @@ export const Content = styled.div`
       font-size: 4rem;
       padding: 0 1rem;
       margin-right: 5rem;
-      margin-top: 8rem;
+      margin-top: 6rem;
    }
 
    .skills, .skillsFuture {
@@ -30,7 +33,7 @@ export const Content = styled.div`
       flex-direction: column;
       color: #fff;
       justify-content: center;
-      border-left: 2px solid var(--line-purple);
+      border-left: 2px solid ${(props) => props.theme.button};
       width: 30%;
       
       
@@ -57,6 +60,7 @@ export const Content = styled.div`
       img {
          width: 2.5rem;
          height: 2.5rem;
+         
       }
    }
 `
