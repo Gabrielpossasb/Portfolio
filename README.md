@@ -1,3 +1,22 @@
-# Portfolio
+<div align='center'>
 
-link: <a target="_blank" href="https://gabrielpossasb.github.io/Portfolio/" >OPEN</a>
+   ### :construction: **Projeto em desenvolvimento** :construction: ###
+   <br/>
+   
+   # Portfólio
+      
+   #### Meu portfólio, com funcionalidade de themas feita com React  ####
+
+   :link: <http://portfolio-gabrielpossasb.vercel.app/> :link:
+</div>
+
+## :computer: Tecnlogias :
+
+- Create React App
+- Vercel
+
+## :rocket: Bibliotecas :
+
+- React
+- TypeScript
+- TailwindCSS
