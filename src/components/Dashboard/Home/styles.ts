@@ -2,11 +2,11 @@ import styled from "styled-components"
 import { ThemeSelectProps } from "../../../App"
 import backgroundImg from "../../../assets/Bitmap.svg"
 
-export const Container = styled.div <ThemeSelectProps>`
+export const Container = styled.div<ThemeSelectProps>`
    display: flex;
    flex-direction: column;
-
-   div.dotted {
+   
+   .dotted {
       position: absolute;
       text-align: center;
       overflow: hidden;
@@ -18,9 +18,7 @@ export const Container = styled.div <ThemeSelectProps>`
       width:160px;
       height: 80%;
       z-index: -6;
-   }
-   
-   .dotted {
+
       padding: 5rem 1.6875em;
       background-image: -webkit-repeating-radial-gradient(center center, ${(props) => props.theme.tex}, #1a1818, 5px, transparent 1px, transparent 100%);
       background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -46,12 +44,15 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
    
    .sideBar {
       display: flex;
+      position: fixed;
+      left: 5%;
+      top: 5.4rem;
       flex-direction: column;
       gap: 1.5rem;
-      margin-top: 2rem;
       padding: 1rem 0.5rem;
       border-radius: 15px;
       background: ${(props) => props.theme.navSide};
+      box-shadow: 0px 2px 10px ${(props) => props.theme.navSide};
 
       button {
          background: transparent;
@@ -87,7 +88,7 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
          flex-direction: column;
          justify-content: space-between;
          z-index: 3;
-         background-image: linear-gradient(to bottom right, ${(props) => props.theme.navSide}, ${(props) => props.theme.light});
+         background-image: linear-gradient(to bottom right, ${(props) => props.theme.bgWelcome}, ${(props) => props.theme.background});
          border-radius: 25px;
          height: 90%;
          color: #fff;

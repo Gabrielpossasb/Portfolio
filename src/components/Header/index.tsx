@@ -35,6 +35,7 @@ export function Header() {
 	return(
 		<Container theme={myTheme}>
 			<Content theme={myTheme}>
+				<div className="spaceNavBar"/>
 			
 				<img src={logo} alt="Logo"/>
 				<div className="bntsHeader">

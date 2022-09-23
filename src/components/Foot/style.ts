@@ -114,19 +114,18 @@ export const Container = styled.div  <ThemeSelectProps>`
       color: ${(props)=>props.theme.textFundo};
    }
 
-   div.dotted {
+   
+   .dottedfoot {
       position: absolute;
       text-align: center;
-      margin-top: -8rem;
+      bottom: 2px;
       font: 21px;
       text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;
       text-transform: uppercase;
       width:480px;
       height:350px;
       z-index: -2;
-   }
-   
-   .dotted {
+
       padding: 5rem 1.6875em;
       background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 3px, transparent 1px, transparent 100%);
       background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);

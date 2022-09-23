@@ -6,6 +6,8 @@ import { useState, createContext, useContext } from "react";
 import { Skills } from "../../Skills";
 import { MyThemeContext } from "../../../hooks/useThemeApi";
 import { NavigationContext } from "../../../hooks/useNavigation";
+import { DiGithubBadge } from "react-icons/di";
+import { Foot } from "../../Foot";
 
 
 export function Home() {
@@ -20,12 +22,11 @@ export function Home() {
 
    return(
       <Container theme={myTheme}>
-         <div className="dotted"/>
          <ContainerHome theme={myTheme}>
             <div className="sideBar">
                <button
                   type="button"
-                  onClick={() => handleSetTheme('cian', 'house')}
+                  onClick={() => handleSetTheme('purple', 'house')}
                >
                   <House size={30} weight="fill"/>
                </button>
@@ -39,7 +40,7 @@ export function Home() {
 
                <button
                   type="button"
-                  onClick={()=>handleSetTheme('purple', 'projects')}
+                  onClick={()=>handleSetTheme('cian', 'projects')}
                >
                   <Folder size={30} weight="fill"/>
                </button>
@@ -68,7 +69,7 @@ export function Home() {
 
                   <div className="icons">
                      <a href="https://www.linkedin.com/in/gabriel-borges-p/" target='_blank'><LinkedinLogo size={32} weight="fill" color="#ffffff" /></a>
-                     <a href="https://github.com/Gabrielpossasb" target='_blank'><GithubLogo size={32} weight="fill" color="#ffffff" /></a>
+                     <a href="https://github.com/Gabrielpossasb" target='_blank'><DiGithubBadge size={36} color="#ffffff" /></a>
                   </div>
                </div>  
                
@@ -76,13 +77,16 @@ export function Home() {
             </div>
          </ContainerHome>
          {
-            (navigation==='projects')?<Projects/>:<div/> 
+            (navigation==='projects') && <Projects/>
          }
          {
-            (navigation==='home')?<div/>:<div/> 
+            (navigation==='home') && <div/>
          }
          {
-            (navigation==='skills')?<Skills />:<div/> 
+            (navigation==='skills') && <Skills /> 
+         }
+         {
+            (navigation==='contato') && <Foot /> 
          }
      
       </Container>

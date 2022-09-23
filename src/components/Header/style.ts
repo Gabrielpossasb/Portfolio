@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { darken} from 'polished'
 import { ThemeSelectProps } from "../../App";
 
 
@@ -19,18 +18,32 @@ export const Content = styled.div <ThemeSelectProps>`
   align-items: center;
   margin: 0;
 
+  .spaceNavBar {
+    position: absolute;
+    border: #727272  solid 2px;
+    border-bottom: 0;
+    width: 4.5rem;
+    margin-left: -5px;
+    height: 2rem;
+    background: var(--background);
+    left: 5%;
+    top: 5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
   img {
     width: 3rem;
     height: 3rem;
   }
   
   button {
-    background: ${(props) => props.theme.background};
+    background: var(--background-header);
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
     border-radius: 1rem;
     border: 0;
-    color: ${(props) => props.theme.textFundo};
+    color: #cfcfcf;
     transition: filter 0.2s;
 
     &:hover {

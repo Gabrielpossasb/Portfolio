@@ -14,7 +14,7 @@ export const NavigationContext = createContext<NavigationContextData>(
 );
 
 export function NavigationProvider({children}: NavigationProviderProps) {
-   const [ navigation, setNavigation ] = useState('projects')
+   const [ navigation, setNavigation ] = useState('home')
 
    function createNavigation(id: string) {
       setNavigation(id)

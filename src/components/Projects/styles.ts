@@ -3,8 +3,7 @@ import { ThemeSelectProps } from "../../App";
 
 
 export const Container = styled.div <ThemeSelectProps>`
-   margin: 0;
-   border-bottom: 2px solid ${(props) => props.theme.button};
+   margin-bottom: 6rem;
 
 
    .content {
@@ -41,27 +40,30 @@ export const Container = styled.div <ThemeSelectProps>`
    
 
    .projetosArea {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-bottom: 6px solid ${(props) => props.theme.line};
-      border-top: 6px solid ${(props) => props.theme.line};
-      border-radius: 2rem;
-      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      border-bottom: 4px solid ${(props) => props.theme.line};
+      border-top: 4px solid ${(props) => props.theme.line};
+      gap: 6rem;
       background: var(--background);
       
    }
 
    .projeto {
-      background-image: linear-gradient(to bottom right, #702783, #17021d);
-      opacity: 0.6;
-      border-radius: 2rem;
-      padding: 2rem 1rem;
-      margin: 2rem 3rem 2rem 3rem;
+      background-image: linear-gradient(to bottom right, #1d272bf3, #07090ade);
+      max-width: 400px;
+      opacity: 0.7;
+      border-radius: 1rem;
+      padding: 1rem 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      transition: opacity 1s;
+      transition: opacity 0.4s;
 
       &:hover {
          opacity: 1;
@@ -70,21 +72,31 @@ export const Container = styled.div <ThemeSelectProps>`
 
       img {
          margin-top: 2rem;
-         width: 400px;
-         height: 200px;
-         border-radius: 10px;
+         width: 100%;
          background-size: cover;
-         border: #c42eff solid 2px;
+         border-top: #17535e solid 3px;
+         border-bottom: #17535e solid 3px;
       }
 
       button {
-         padding: 5px 7px;
-         margin-top: 3rem;
-         background: var(--gradient-10);
-         
-         border-radius: 50px;
+         padding: 2px 4px;
+         align-items: center;
+         justify-content: center;
+         margin-top: 2rem;
+         background: #252225;
+         border-radius: 100%;
          border: 0;
          
+         
+      }
+      .btnDeploy {
+         background: #178d3d;
+         padding: 0px 9px;
+         
+      }
+      .btnLinks {
+         display: flex;
+         gap: 2rem;
       }
    }
 

@@ -6,9 +6,10 @@ interface MyTheme {
    textFundo: string,
    button: string,
    border: string,
-   navSide: number,
-   light: number,
-   line: number,
+   navSide: string,
+   light: string,
+   line: string,
+   bgWelcome: string,
 }
 
 interface MyThemeProviderProps {

@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg"
 import { GithubLogo, LinkedinLogo } from "phosphor-react";
 import { useContext } from "react";
 import { MyThemeContext } from "../../hooks/useThemeApi";
+import { DiGithubBadge } from "react-icons/di";
 
 
 export function Foot() {
@@ -22,14 +23,14 @@ export function Foot() {
 
             <div className="icons">
                <a href="https://www.linkedin.com/in/gabriel-borges-p/" target='_blank'><LinkedinLogo size={32} weight="fill" color="#0077B5" /></a>
-               <a href="https://github.com/Gabrielpossasb" target='_blank'><GithubLogo size={32} weight="fill" color="#21262d" /></a>
+               <a href="https://github.com/Gabrielpossasb" target='_blank' style={{background:'#fff', borderRadius: '100%', height:'34px'}}><DiGithubBadge size={34} color="#21262d" /></a>
             </div>
 
            
-            <h5>Meu contato pessoal</h5>
+            <h5>Meu contato pessoal:</h5>
             <h5>(67) 9 9935-9933</h5>
             <h1 className="s">-</h1>
-            <h5>Meu Gmail</h5>
+            <h5>Meu Gmail:</h5>
             <h5>gabrielpossasb@gmail</h5>
            
          </div>
@@ -61,7 +62,7 @@ export function Foot() {
                   ENVIAR
                </button>
 
-               <div className="dotted">
+               <div className="dottedfoot">
 
                </div>
             </div>
