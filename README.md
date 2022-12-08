@@ -1,11 +1,12 @@
 <div align='center'>
 
    ### :construction: **Projeto em desenvolvimento** :construction: ###
-   <br/>
-   
+
    # Portfólio
+   
+   <img height='140px' src='./public/favicon.ico' alt='logo'/>
       
-   #### Meu portfólio, com funcionalidade de themas feita com React  ####
+   #### Meu portfólio, one conto um pouco mais sobre min, e apresento meus projetos ####
 
    :link: <http://portfolio-gabrielpossasb.vercel.app/> :link:
 </div>
