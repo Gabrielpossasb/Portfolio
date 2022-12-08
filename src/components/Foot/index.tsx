@@ -1,7 +1,8 @@
 import { Container } from "./style";
 
-import logo from "../../assets/logo.svg"
-import { GithubLogo, LinkedinLogo } from "phosphor-react";
+import logo from '../../assets/MyLogo.png' 
+
+import { LinkedinLogo } from "phosphor-react";
 import { useContext } from "react";
 import { MyThemeContext } from "../../hooks/useThemeApi";
 import { DiGithubBadge } from "react-icons/di";
@@ -12,9 +13,9 @@ export function Foot() {
 
    return(
       <Container theme={myTheme}>
-         <div className="meusDados">
+         <div className="meusDados" id='contact'>
             
-            <img src={logo} alt="logo"/>
+            <img src={logo} alt="logo" className="w-28"/>
 
             
             <h1>Gabriel Possas</h1>
@@ -27,7 +28,7 @@ export function Foot() {
             </div>
 
            
-            <h5>Meu contato pessoal:</h5>
+            <h5>Meu whatsapp:</h5>
             <h5>(67) 9 9935-9933</h5>
             <h1 className="s">-</h1>
             <h5>Meu Gmail:</h5>
@@ -38,8 +39,9 @@ export function Foot() {
          
 
          <div className="contato">
+            
             <div>
-               <h1>Contact</h1>
+               <h1 className="text-3xl">Contact</h1>
                <h1 className="Me">Me</h1>
             </div>
 
@@ -61,12 +63,13 @@ export function Foot() {
                <button type="button">
                   ENVIAR
                </button>
-
-               <div className="dottedfoot">
-
-               </div>
+               
+              
             </div>
+            
          </div>
+         
+        
       </Container>
    );
 }

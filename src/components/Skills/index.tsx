@@ -1,38 +1,69 @@
-import { Container, Content } from "./styles";
-import { DiCss3, DiReact  } from "react-icons/di";
-import Oval from "../../assets/Oval.svg"
-import { useContext } from "react";
-import { MyThemeContext } from "../../hooks/useThemeApi";
+import { useState } from "react";
 
 export function Skills() {
-   const { myTheme } = useContext(MyThemeContext)
+
+   const [ skills, setSkills ] = useState([
+      { 
+         name: 'React',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+      },
+      { 
+         name: 'HTML5',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+      },
+      { 
+         name: 'JavaScript',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+      },
+      { 
+         name: 'GraphQL',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
+      },
+      { 
+         name: 'TypeScript',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+      },
+      { 
+         name: 'CSS',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+      },
+   ])
+
+   let delay = 0
 
    return (
-      <Container theme={myTheme}>
-         <Content theme={myTheme}>
-            <h1 className="titleS">SKILLS</h1>
-            <div></div>
+      <div id="skills">
+         <div className="grid-cols-3 grid px-6 rounded-md gap-8 relative">
+
+            <div className="pt-20">
+               <text className="rotate-180 transform text-neutral-800  inline-block text-[78px] font-semibold
+               [text-shadow:2px_2px_2px_#32606ecc]" 
+               style={{ writingMode: 'vertical-rl' }}>
+                  SKILLS
+               </text>
+            </div>
            
-            <div className="skills">
-               <h2><span><img src={Oval}/></span> React</h2>
-               <h2><span><img src={Oval}/></span> JavaScript</h2>
-               <h2><span><img src={Oval}/></span> HTML</h2>
-               <h2><span><img src={Oval}/></span> CSS</h2>
-               <h2><span><img src={Oval}/></span> TypeScript</h2>
-               <h2><span><img src={Oval}/></span> GrapgQL</h2>
+            <div className="flex flex-col gap-14 h-full py-10 border-l-2 border-violet-900">
+               {  skills.map( skill => { delay = delay + 2500; return (
+                     <div className={`flex gap-4 w-[250px] items-center duration-300 font-medium -ml-[11px] group relative
+                        hover:cursor-default animate-colorTransitonText
+                     `} style={{animationDelay: `${delay}ms`}}>
+                        <div className="h-5 w-5 bg-violet-900 duration-300 rounded-full border-4 border-neutral-900 group-hover:bg-cyan-500 animate-colorTransitonBg"
+                           style={{animationDelay: `${delay}ms`}}
+                        />
 
+                        <text className="text-2xl">{skill.name}</text>
+
+                        <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
+                     </div>
+                  )})
+               }
             </div>
 
-            <div className="skillsFuture">
-               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" />
-
+            <div>
+               <button>{'>'}</button>
             </div>
-         </Content>
-      </Container>
+         </div>
+      </div>
    );
 }

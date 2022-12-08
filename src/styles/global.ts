@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 
-
-
 export const GlobalStyle = createGlobalStyle`
 
 	:root {
@@ -39,15 +37,13 @@ export const GlobalStyle = createGlobalStyle`
 		}
   }
 
-  body {
-		background: var(--background);
-		-webkit-font-smoothing: antialiased;
-	}
+  
 
 	body, input, textarea, button {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 400;
-		color: #fff;
+		color: #f1f0f0;
+		background: #161515;
 	}
 
 	button {

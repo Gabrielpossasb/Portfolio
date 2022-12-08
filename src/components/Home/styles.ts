@@ -1,13 +1,13 @@
 import styled from "styled-components"
-import { ThemeSelectProps } from "../../../App"
-import backgroundImg from "../../../assets/Bitmap.svg"
+import { ThemeSelectProps } from "../../App"
+import backgroundImg from "../../assets/Bitmap.svg"
 
 export const Container = styled.div<ThemeSelectProps>`
    display: flex;
    flex-direction: column;
    
    .dotted {
-      position: absolute;
+      position: relative;
       text-align: center;
       overflow: hidden;
       top: 9rem;
@@ -51,19 +51,25 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
       gap: 1.5rem;
       padding: 1rem 0.5rem;
       border-radius: 15px;
-      background: ${(props) => props.theme.navSide};
-      box-shadow: 0px 2px 10px ${(props) => props.theme.navSide};
+      background-image: linear-gradient(to bottom, #8533b4fa, #0889b1ff);
+      box-shadow: 1px 3px 6px 1px #7934b1;
 
-      button {
+      transition: all 0.5s;
+
+      &:hover {
+         box-shadow: 1px 3px 6px 2px #9b67c5;
+      }
+
+      a {
          background: transparent;
          padding: 6px 8px;
          border: 0;
          border-radius: 50px;
          color: var(--pink-light);
-         transition: background 1s;
+         transition: background 0.5s;
 
          &:hover {
-            background: #a3a3a36e;
+            background: #c29add85;
          }
 
       }
@@ -76,24 +82,24 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
       background-image: url(${backgroundImg});
       border-radius: 25px; 
       margin: 3rem 3rem 0 3rem;
+      position: relative;
       padding: 2rem;
       background-color: gray;
       justify-content: center;
-
-      
+      box-shadow: -1px 2px 4px 2px #3e95b8;      
 
       .conteudo {
          padding: 2rem;
          display: flex;
          flex-direction: column;
-         justify-content: space-between;
-         z-index: 3;
-         background-image: linear-gradient(to bottom right, ${(props) => props.theme.bgWelcome}, ${(props) => props.theme.background});
+         gap: 1rem;
+         z-index: 20;
+         background-image: linear-gradient(to bottom right, #690697c2, #0a7a9caf);
          border-radius: 25px;
          height: 90%;
          color: #fff;
 
-         h2 {
+         h1 {
             font-weight: 500;
          }
          h4 {

@@ -1,13 +1,17 @@
-import { Home } from "./Home";
-import { Container } from "./style";
+import { Foot } from "../Foot";
+import { Projects } from "../Projects";
+import { Skills } from "../Skills";
+import { Home } from "../Home";
 
 
 
 export function Dashboard() {
 	return (
-		<Container>
+		<div className="flex flex-col items-center">
 			<Home/>
-			
-		</Container>
+			<Skills/>
+			<Projects/>
+			<Foot/>
+		</div>
 	);
 }

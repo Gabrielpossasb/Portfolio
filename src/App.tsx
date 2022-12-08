@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
 import { Dashboard } from './components/Dashboard';
-import { Header } from './components/Header';
-import { GlobalStyle } from './styles/global';
 
 export interface ThemeSelectProps {
 	theme: {
@@ -17,12 +14,9 @@ export interface ThemeSelectProps {
 
 export function App() {
 	
-	
 	return (
-		<div>
-			<Header/>
+		<div className='bg-[#131314]'>
 			<Dashboard />
-			<GlobalStyle />
 		</div>
 	);
 }

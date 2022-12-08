@@ -23,18 +23,11 @@ export const Container = styled.div  <ThemeSelectProps>`
       display: flex;
       height: 100%;
       min-width: 230px;
-      max-width: 250px;
+      max-width: 280px;
       color: #fff;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
-     
-      img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 2rem;
-      }
 
       h2, h5 {
          font-weight: 400;
@@ -116,7 +109,7 @@ export const Container = styled.div  <ThemeSelectProps>`
 
    
    .dottedfoot {
-      position: absolute;
+      position: relative;
       text-align: center;
       bottom: 2px;
       font: 21px;

@@ -31,14 +31,13 @@ export function MyThemeProvider({children}: MyThemeProviderProps) {
    const [ myTheme, setMyTheme] = useState<MyTheme>(MyThemeRequest[1])
 
    async function selectMyTheme(id: string) {
-      const deleyzin = myTheme
+      const deleyzin = MyThemeRequest[4]
       const select = MyThemeRequest.filter((data: MyTheme) => {
          return (data.id === id)
       })
-      setMyTheme(select[0])
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise(resolve => setTimeout(resolve, 300));
       setMyTheme(deleyzin)
-      await new Promise(resolve => setTimeout(resolve, 350));
+      await new Promise(resolve => setTimeout(resolve, 300));
       setMyTheme(select[0])
       
    }

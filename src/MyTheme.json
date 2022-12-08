@@ -46,5 +46,16 @@
 		"line": "#dfac07",
 		"bgWelcome": "#b39512c9"
 		
+	},
+	{
+		"id": "black",
+		"background": "#18181aff",
+		"textFundo":"#18181aff",
+		"button":"#18181aff",
+		"border": "#18181aff",
+		"navSide": "#18181aff",
+		"light": "#18181aff",
+		"line": "#18181aff",
+		"bgWelcome": "#18181aff"
 	}
 ]

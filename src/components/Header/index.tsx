@@ -1,6 +1,6 @@
 import ReactModal from "react-modal";
 import { Container, Content } from "./style";
-import  logo  from "../../assets/logo.svg"
+import logo from '../../assets/MyLogo.svg' 
 import { useContext, useState } from "react";
 import { MyThemeContext } from "../../hooks/useThemeApi";
 import { NavigationContext } from "../../hooks/useNavigation";
