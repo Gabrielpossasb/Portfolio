@@ -21,3 +21,4 @@
 - React
 - TypeScript
 - TailwindCSS
+- Keen Slider
