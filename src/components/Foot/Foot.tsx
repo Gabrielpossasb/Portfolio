@@ -1,4 +1,4 @@
-import { Container } from "./style";
+import { Container } from "./FootStyles";
 
 import logo from '../../assets/MyLogo.png' 
 
@@ -18,8 +18,8 @@ export function Foot() {
             <img src={logo} alt="logo" className="w-28"/>
 
             
-            <h1>Gabriel Possas</h1>
-            <h2>Dev. Front-End</h2>
+            <h1 className="font-semibold text-2xl text-cyan-50">Gabriel Possas</h1>
+            <h2 className="font-semibold text-lg text-cyan-500">Dev. Front-End</h2>
             
 
             <div className="icons">
@@ -30,19 +30,17 @@ export function Foot() {
            
             <h5>Meu whatsapp:</h5>
             <h5>(67) 9 9935-9933</h5>
-            <h1 className="s">-</h1>
+            <div className={`rounded-full w-8 h-2 bg-gradient-to-b from-cyan-500 to-cyan-800 my-4 shadow-box`}/>
             <h5>Meu Gmail:</h5>
             <h5>gabrielpossasb@gmail</h5>
            
          </div>
 
-         
-
          <div className="contato">
             
-            <div>
-               <h1 className="text-3xl">Contact</h1>
-               <h1 className="Me">Me</h1>
+            <div className="text-4xl font-semibold text-cyan-50">
+               <h1 className="">Contact</h1>
+               <h1 className="text-cyan-500">Me</h1>
             </div>
 
             <div className="mensage">
@@ -60,13 +58,11 @@ export function Foot() {
                   className="Inp"
                />               
 
-               <button type="button">
+               <button className="bg-cyan-500" type="button">
                   ENVIAR
                </button>
                
-              
             </div>
-            
          </div>
          
         

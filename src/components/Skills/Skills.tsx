@@ -33,22 +33,23 @@ export function Skills() {
 
    return (
       <div id="skills">
-         <div className="grid-cols-3 grid px-6 rounded-md gap-8 relative">
+         <div className="grid-cols-3 grid px-6 mt-10 rounded-md gap-8 relative">
 
             <div className="pt-20">
-               <text className="rotate-180 transform text-neutral-800  inline-block text-[78px] font-semibold
-               [text-shadow:2px_2px_2px_#32606ecc]" 
+               <text className="rotate-180 transform text-gray-800  inline-block text-[96px] font-semibold
+               [text-shadow:6px_4px_8px_#161515]" 
                style={{ writingMode: 'vertical-rl' }}>
                   SKILLS
                </text>
             </div>
            
-            <div className="flex flex-col gap-14 h-full py-10 border-l-2 border-violet-900">
+            <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
                {  skills.map( skill => { delay = delay + 2500; return (
-                     <div className={`flex gap-4 w-[250px] items-center duration-300 font-medium -ml-[11px] group relative
+                     <div className={`flex gap-4 w-[250px] items-center duration-300 font-medium -ml-[17px] group relative
                         hover:cursor-default animate-colorTransitonText
                      `} style={{animationDelay: `${delay}ms`}}>
-                        <div className="h-5 w-5 bg-violet-900 duration-300 rounded-full border-4 border-neutral-900 group-hover:bg-cyan-500 animate-colorTransitonBg"
+                        <div className="h-7 w-7 duration-300 rounded-full border-4 border-gray-700 group-hover:bg-cyan-500 animate-colorTransitonBg
+                           bg-gradient-to-b from-purple-500 to-purple-800"
                            style={{animationDelay: `${delay}ms`}}
                         />
 
@@ -58,6 +59,12 @@ export function Skills() {
                      </div>
                   )})
                }
+            </div>
+              
+            <div className={'flex'}>
+               <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-purple-500 to-purple-800 ml-10 mt-8 shadow-box`}/>
+               <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-gray-900 to-gray-800 ml-10 mt-8 shadow-box`}/>
+               <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-gray-900 to-gray-800 ml-10 mt-8 shadow-box`}/>
             </div>
 
             <div>

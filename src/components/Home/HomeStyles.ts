@@ -46,18 +46,19 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
       display: flex;
       position: fixed;
       left: 5%;
+      z-index: 20;
       top: 5.4rem;
       flex-direction: column;
       gap: 1.5rem;
       padding: 1rem 0.5rem;
       border-radius: 15px;
-      background-image: linear-gradient(to bottom, #8533b4fa, #0889b1ff);
-      box-shadow: 1px 3px 6px 1px #7934b1;
+      background-image: linear-gradient(to bottom, #4514a0, #5c279c, #197fa1);
+      box-shadow: 8px 10px 8px #242226;
 
-      transition: all 0.5s;
+      transition: all 0.6s;
 
       &:hover {
-         box-shadow: 1px 3px 6px 2px #9b67c5;
+         box-shadow: 4px 6px 6px #b48ad825;
       }
 
       a {
@@ -86,7 +87,6 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
       padding: 2rem;
       background-color: gray;
       justify-content: center;
-      box-shadow: -1px 2px 4px 2px #3e95b8;      
 
       .conteudo {
          padding: 2rem;
@@ -94,7 +94,7 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
          flex-direction: column;
          gap: 1rem;
          z-index: 20;
-         background-image: linear-gradient(to bottom right, #690697c2, #0a7a9caf);
+         background-image: linear-gradient(to bottom right, #5628adaf, #268fa662);
          border-radius: 25px;
          height: 90%;
          color: #fff;

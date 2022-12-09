@@ -1,5 +1,5 @@
 import { Chats, Folder, House, LinkedinLogo, RocketLaunch, UserCircle } from "phosphor-react";
-import { Container, ContainerHome } from "./styles";
+import { Container, ContainerHome } from "./HomeStyles";
 import { Flex, Text } from "@chakra-ui/react"
 
 import { useContext } from "react";

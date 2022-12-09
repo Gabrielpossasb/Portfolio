@@ -28,10 +28,7 @@ export const Container = styled.div  <ThemeSelectProps>`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
-      h2, h5 {
-         font-weight: 400;
-      }
+      color:#6d6d6d;
 
       .s {
          color: ${(props)=>props.theme.textFundo};
@@ -46,6 +43,7 @@ export const Container = styled.div  <ThemeSelectProps>`
       display: flex;
       gap: 5rem;
       max-width: 600px;
+      box-shadow: 4px 6px 8px 4px #18191a9c;
       
    }
 
@@ -81,7 +79,6 @@ export const Container = styled.div  <ThemeSelectProps>`
    
 
    button {
-      background: ${(props)=>props.theme.navSide};
       border: 0;
       border-radius: 1rem;
       padding: 0.5rem 5rem;
@@ -93,18 +90,6 @@ export const Container = styled.div  <ThemeSelectProps>`
       &:hover {
          filter: brightness(0.9);
       }
-   }
-
-   h1 {
-      color: #fff;
-   }
-
-   h5 {
-      color: var(--text-grey);
-   }
-
-   .Me {
-      color: ${(props)=>props.theme.textFundo};
    }
 
    

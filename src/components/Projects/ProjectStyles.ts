@@ -4,13 +4,15 @@ import { ThemeSelectProps } from "../../App";
 
 export const Container = styled.div <ThemeSelectProps>`
    margin-bottom: 6rem;
-
+   margin-top: 8rem;
+   width: 100%;
 
    .content {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      
+      align-items: flex-end;
+      width: 100%;
+
    }
 
    .line, .line- {
@@ -57,28 +59,5 @@ export const Container = styled.div <ThemeSelectProps>`
          border-top: #099db8 solid 3px;
          border-bottom: #099db8 solid 3px;
       }
-
-      button {
-         padding: 2px 4px;
-         align-items: center;
-         justify-content: center;
-         margin-top: 2rem;
-         background: #252225;
-         border-radius: 100%;
-         border: 0;
-         
-         
-      }
-      .btnDeploy {
-         background: #178d3d;
-         padding: 0px 9px;
-         
-      }
-      .btnLinks {
-         display: flex;
-         gap: 2rem;
-      }
    }
-
-  
 `

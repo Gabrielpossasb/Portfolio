@@ -1,4 +1,4 @@
-import { Dashboard } from './components/Dashboard';
+import { Dashboard } from './components/Dashboard/Dashboard';
 
 export interface ThemeSelectProps {
 	theme: {
@@ -15,7 +15,7 @@ export interface ThemeSelectProps {
 export function App() {
 	
 	return (
-		<div className='bg-[#131314]'>
+		<div className='bg-[#303030]'>
 			<Dashboard />
 		</div>
 	);
