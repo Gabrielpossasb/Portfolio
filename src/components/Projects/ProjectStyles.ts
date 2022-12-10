@@ -3,8 +3,8 @@ import { ThemeSelectProps } from "../../App";
 
 
 export const Container = styled.div <ThemeSelectProps>`
-   margin-bottom: 6rem;
-   margin-top: 8rem;
+   margin-bottom: 4rem;
+   margin-top: 2rem;
    width: 100%;
 
    .content {
@@ -12,6 +12,7 @@ export const Container = styled.div <ThemeSelectProps>`
       flex-direction: column;
       align-items: flex-end;
       width: 100%;
+      position: relative;
 
    }
 

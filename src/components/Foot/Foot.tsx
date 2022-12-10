@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { MyThemeContext } from "../../hooks/useThemeApi";
 import { DiGithubBadge } from "react-icons/di";
 
+import dot from '../../assets/Dots.svg'
 
 export function Foot() {
    const { myTheme } = useContext(MyThemeContext)
@@ -64,8 +65,8 @@ export function Foot() {
                
             </div>
          </div>
+               <img src={dot} alt='' className="absolute bottom-10 -right-20 z-10"/>
          
-        
       </Container>
    );
 }

@@ -5,6 +5,7 @@ import backgroundImg from "../../assets/Bitmap.svg"
 export const Container = styled.div<ThemeSelectProps>`
    display: flex;
    flex-direction: column;
+   position: relative;
    
    .dotted {
       position: relative;
@@ -32,7 +33,6 @@ export const Container = styled.div<ThemeSelectProps>`
  
 
 export const ContainerHome = styled.div <ThemeSelectProps>`
-
    display: flex;
    max-width: 1200px;
    max-height: 580px;
@@ -85,8 +85,10 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
       margin: 3rem 3rem 0 3rem;
       position: relative;
       padding: 2rem;
+      z-index: 20;
       background-color: gray;
       justify-content: center;
+      box-shadow: 5px 5px 18px 6px #222222;
 
       .conteudo {
          padding: 2rem;

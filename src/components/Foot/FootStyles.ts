@@ -10,6 +10,7 @@ export const Container = styled.div  <ThemeSelectProps>`
    padding-bottom: 8rem;
    max-width: 1100px;
    gap: 7rem;
+   position: relative;
 
    .icons {
       display: flex;
@@ -24,11 +25,15 @@ export const Container = styled.div  <ThemeSelectProps>`
       height: 100%;
       min-width: 230px;
       max-width: 280px;
+      padding: 2rem;
+      border-radius: 1rem;
+      z-index: 20;
       color: #fff;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       color:#6d6d6d;
+      box-shadow: inset 2px 4px 10px 4px #181717;
 
       .s {
          color: ${(props)=>props.theme.textFundo};
@@ -39,6 +44,7 @@ export const Container = styled.div  <ThemeSelectProps>`
       background: var(--background-light);
       padding: 2rem 2rem 6rem 2rem;
       border-radius: 2rem;
+      z-index: 20;
       flex-direction: row;
       display: flex;
       gap: 5rem;

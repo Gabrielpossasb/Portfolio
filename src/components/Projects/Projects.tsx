@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
 import { Container } from "./ProjectStyles";
-import { IoEnterOutline } from 'react-icons/io5';
+import { IoLink } from 'react-icons/io5';
 import { MyThemeContext } from "../../hooks/useThemeApi";
 import { DiGithubBadge } from "react-icons/di";
-import { Text } from '@chakra-ui/react'
 import { useKeenSlider } from 'keen-slider/react'
 
 import 'keen-slider/keen-slider.min.css'
+import dotWhite from '../../assets/DotsWhite.svg'
 
 export function Projects() {
    const { myTheme } = useContext(MyThemeContext)
@@ -28,9 +28,6 @@ export function Projects() {
          img: require('./prints/worldtrip-Home.png'),
          name: 'WorldTrip',
          description: 'Navegue entre as principais cidades do mundo',
-         width:0,
-         height:0,
-         ratio:0,
          website:'http://worldtrip-omega.vercel.app/',
          git:'https://github.com/Gabrielpossasb/worldtrip'
       },
@@ -38,9 +35,6 @@ export function Projects() {
          img: require('./prints/Plataforma_aulas.png'),
          name: 'Plataforma de Aulas',
          description: 'Desenvolvida no evento Ignite no Youtube',
-         width:0,
-         height:0,
-         ratio:0,
          website:'http://plataforma-aulas-rocketseat.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Plataforma-Aulas-Rocketseat'
       },
@@ -48,9 +42,6 @@ export function Projects() {
          img: require('./prints/dashgo-Dashboard.png'),
          name: 'DashGO',
          description: 'Dashboard de gestão de pessoas',
-         width:0,
-         height:0,
-         ratio:0,
          website:'https://dash-go-ecru.vercel.app/',
          git:'https://github.com/Gabrielpossasb/dashGo'
       },
@@ -58,9 +49,6 @@ export function Projects() {
          img: require('./prints/dtmonet.png'),
          name: 'DT Money',
          description: 'Aplicação de balanço de contas',
-         width:0,
-         height:0,
-         ratio:0,
          website:'http://aplicacao-balanco-de-contas.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Aplicacao-Balanco-de-Contas'
       },
@@ -68,18 +56,12 @@ export function Projects() {
          img: require('./prints/dtmonet.png'),
          name: 'Ig.News',
          description: '',
-         width:0,
-         height:0,
-         ratio:0,
          website:'http://aplicacao-balanco-de-contas.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Aplicacao-Balanco-de-Contas'
       },{
          img: require('./prints/dtmonet.png'),
          name: 'Ignite Shop',
          description: '',
-         width:0,
-         height:0,
-         ratio:0,
          website:'http://aplicacao-balanco-de-contas.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Aplicacao-Balanco-de-Contas'
       },
@@ -89,12 +71,16 @@ export function Projects() {
       <Container theme={myTheme}>
          <div className="content" id='projects'>
 
-            <div className={'flex flex-col gap-6 items-center self-center text-[#f3f3f3f3] font-semibold text-4xl'}>
+            <div className={'flex flex-col gap-6 items-center self-center text-[#f3f3f3f3] font-semibold text-5xl [text-shadow:2px_4px_4px_#161515]'}>
                PROJETOS
                <button className={`rounded-full w-20 h-4 bg-gradient-to-b from-cyan-500 to-cyan-800 shadow-box`}/>
             </div>
             
-            <div className="w-[1150px] relative bg-gray-700 rounded-bl-3xl rounded-tl-3xl p-10 pl-16 shadow-[_inset_20px_0px_40px_#242424] right-0 my-12">
+            <img src={dotWhite} alt='' className="absolute right-0 -top-6 z-10"/>
+            <img src={dotWhite} alt='' className="absolute right-0 -bottom-8 z-10"/>
+            
+            <div className="w-[1150px] relative bg-gray-700 rounded-bl-3xl rounded-tl-3xl z-20 p-10 pl-16 shadow-[_inset_20px_0px_40px_#181818] right-0 my-12">
+
                <div className="keen-slider" ref={sliderRef}>  
                      {  projetos.map(val => (
                            <div className='keen-slider__slide'>
@@ -113,7 +99,7 @@ export function Projects() {
                                        hover:brightness-75 duration-300 hover:shadow-boxLg
                                     ">
                                        <a target="_blank" rel='noreferrer' href={val.website} className='flex items-center gap-6'>
-                                          <IoEnterOutline size={30} color='white'/>
+                                          <IoLink size={30} color='white'/>
                                           Visitar
                                        </a>
                                     </button>

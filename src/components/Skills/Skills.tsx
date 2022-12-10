@@ -33,7 +33,7 @@ export function Skills() {
 
    return (
       <div id="skills">
-         <div className="grid-cols-3 grid px-6 mt-10 rounded-md gap-8 relative">
+         <div className="grid-cols-3 grid px-6 mt-16 rounded-md gap-8 relative">
 
             <div className="pt-20">
                <text className="rotate-180 transform text-gray-800  inline-block text-[96px] font-semibold

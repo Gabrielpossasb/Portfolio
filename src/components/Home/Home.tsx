@@ -8,6 +8,7 @@ import { NavigationContext } from "../../hooks/useNavigation";
 import { DiGithubBadge } from "react-icons/di";
 
 import logo from '../../assets/MyLogo.png' 
+import dot from '../../assets/Dots.svg'
 
 export function Home() {
    const { myTheme, selectMyTheme } = useContext(MyThemeContext)
@@ -59,9 +60,9 @@ export function Home() {
                   </Flex>
                </div>  
                
-               
             </div>
          </ContainerHome>
+            <img src={dot} alt='' className="absolute -right-20 -bottom-14 z-10"/>
       </Container>
    );
 }
