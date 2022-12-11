@@ -7,15 +7,17 @@ import { useKeenSlider } from 'keen-slider/react'
 
 import 'keen-slider/keen-slider.min.css'
 import dotWhite from '../../assets/DotsWhite.svg'
-import { ArrowBendRightDown } from "phosphor-react";
+import { useMediaQuery } from "react-responsive";
 
 export function Projects() {
    const { myTheme } = useContext(MyThemeContext)
 
+   const isMobile = useMediaQuery({ query: '(max-width: 640px)'})
+
    const [sliderRef] = useKeenSlider(
       {
          slides: {
-            perView: 2,
+            perView: isMobile ? 1 : 2,
             spacing: 48,
           }
       },
@@ -107,10 +109,10 @@ export function Projects() {
                <button className={`rounded-full w-20 h-4 bg-gradient-to-b from-cyan-500 to-cyan-800 shadow-box`}/>
             </div>
             
-            <img src={dotWhite} alt='' className="absolute right-0 -top-5 z-10"/>
-            <img src={dotWhite} alt='' className="absolute right-0 -bottom-8 z-10"/>
+            <img src={dotWhite} alt='' className="absolute right-2 -top-5 z-10"/>
+            <img src={dotWhite} alt='' className="absolute right-2 -bottom-8 z-10"/>
             
-            <div className="w-[1150px] relative bg-gray-700 rounded-bl-3xl rounded-tl-3xl z-20 px-4 py-4 pl-8 shadow-[_inset_10px_0px_20px_#202020] right-0 my-12">
+            <div className="w-full relative cel:ml-6 bg-gray-700 rounded-bl-3xl rounded-tl-3xl z-20 px-4 py-4 pl-8 shadow-[_inset_10px_0px_20px_#202020] right-0 my-12">
 
                <div className="keen-slider" ref={sliderRef}>  
                   {  projetos.map((val, index) => (

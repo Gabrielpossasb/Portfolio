@@ -8,9 +8,12 @@ import { MyThemeContext } from "../../hooks/useThemeApi";
 import { DiGithubBadge } from "react-icons/di";
 
 import dot from '../../assets/Dots.svg'
+import { useMediaQuery } from "react-responsive";
 
 export function Foot() {
    const { myTheme } = useContext(MyThemeContext)
+
+   const isMobile = useMediaQuery({ query: '(max-width: 640px)'})
 
    return(
       <Container theme={myTheme}>
@@ -37,35 +40,37 @@ export function Foot() {
            
          </div>
 
-         <div className="contato">
-            
-            <div className="text-4xl font-semibold text-cyan-50">
-               <h1 className="">Contact</h1>
-               <h1 className="text-cyan-500">Me</h1>
+         {  !isMobile && (
+            <div className="contato">
+               <div className="text-4xl font-semibold text-cyan-50">
+                  <h1 className="">Contact</h1>
+                  <h1 className="text-cyan-500">Me</h1>
+               </div>
+
+               <div className="mensage">
+                  <input
+                     placeholder="Qual seu nome?"
+                  />
+
+                  <input
+                     placeholder="Qual seu email?"
+                  />
+
+                  <input
+                     type="text"
+                     placeholder="Deixe sua mensagem!"
+                     className="Inp"
+                  />               
+
+                  <button className="bg-cyan-500" type="button">
+                     ENVIAR
+                  </button>
+                  
+               </div>
             </div>
-
-            <div className="mensage">
-               <input
-                  placeholder="Qual seu nome?"
-               />
-
-               <input
-                  placeholder="Qual seu email?"
-               />
-
-               <input
-                  type="text"
-                  placeholder="Deixe sua mensagem!"
-                  className="Inp"
-               />               
-
-               <button className="bg-cyan-500" type="button">
-                  ENVIAR
-               </button>
+         )}
                
-            </div>
-         </div>
-               <img src={dot} alt='' className="absolute bottom-10 -right-20 z-10"/>
+         <img src={dot} alt='' className="absolute bottom-10 -right-20 z-10"/>
          
       </Container>
    );

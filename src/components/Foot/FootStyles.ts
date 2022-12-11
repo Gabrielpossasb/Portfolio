@@ -28,6 +28,7 @@ export const Container = styled.div  <ThemeSelectProps>`
       padding: 2rem;
       border-radius: 1rem;
       z-index: 20;
+      background: #303030;
       color: #fff;
       align-items: center;
       justify-content: center;

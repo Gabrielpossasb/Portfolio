@@ -6,36 +6,13 @@ export const Container = styled.div<ThemeSelectProps>`
    display: flex;
    flex-direction: column;
    position: relative;
-   
-   .dotted {
-      position: relative;
-      text-align: center;
-      overflow: hidden;
-      top: 9rem;
-      right: 6rem;
-      font: 21px;
-      text-shadow: 1px 1px 0 #fff, 2px 2px 0 #adacac;
-      text-transform: uppercase;
-      width:160px;
-      height: 80%;
-      z-index: -6;
-
-      padding: 5rem 1.6875em;
-      background-image: -webkit-repeating-radial-gradient(center center, ${(props) => props.theme.tex}, #1a1818, 5px, transparent 1px, transparent 100%);
-      background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-      background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-      background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 5px, transparent 1px, transparent 100%);
-      -webkit-background-size: 4px 4px;
-      -moz-background-size: 4px 4px;
-      background-size: 40px 40px;
-   }
+   width: 100%;
 `
  
 
 export const ContainerHome = styled.div <ThemeSelectProps>`
    display: flex;
-   max-width: 1200px;
-   max-height: 580px;
+   width: 100%;
    flex-direction: row;
    align-items: center;
    justify-content: center;
@@ -78,16 +55,14 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
 
    .welcome {
       background-size: cover;
-      width: 850px;
-      height: 400px;
+      width: 100%;
       background-image: url(${backgroundImg});
       border-radius: 25px; 
       margin: 3rem 3rem 0 3rem;
       position: relative;
       padding: 2rem;
       z-index: 20;
-      background-color: gray;
-      justify-content: center;
+      background-color: #22222200;
       box-shadow: 5px 5px 18px 6px #222222;
 
       .conteudo {

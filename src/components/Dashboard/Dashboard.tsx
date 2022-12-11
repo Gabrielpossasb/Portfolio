@@ -5,11 +5,10 @@ import { Home } from "../Home/Home";
 import AboutMe from "../Me/AboutMe";
 import FootSeparete from "../Foot/FootSeparete";
 
-
-
 export function Dashboard() {
+
 	return (
-		<div className="flex flex-col items-center">
+		<div className="flex flex-col items-center sm:w-[90%] overflow-y-scroll pl-4">
 			<Home/>
 			<Skills/>
 			<Projects/>

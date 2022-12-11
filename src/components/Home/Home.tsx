@@ -9,10 +9,14 @@ import { DiGithubBadge } from "react-icons/di";
 
 import logo from '../../assets/MyLogo.png' 
 import dot from '../../assets/Dots.svg'
+import { useMediaQuery } from "react-responsive";
+
 
 export function Home() {
    const { myTheme, selectMyTheme } = useContext(MyThemeContext)
    const { navigation, createNavigation } = useContext(NavigationContext)
+
+   const isMobile = useMediaQuery({ query: '(max-width: 640px)'})
 
    function handleSetTheme(id: string, InfoSelect: string) {
       createNavigation( InfoSelect )
@@ -23,34 +27,14 @@ export function Home() {
    return(
       <Container id='home'>
          <ContainerHome theme={myTheme}>
-            <div className="sideBar">
-               <a href="#home">
-                  <House size={30} weight="fill"/>
-               </a>
-
-               <a href="#skills">
-                  <RocketLaunch size={30} weight="fill"/>
-               </a>
-
-               <a href="#projects">
-                  <Folder size={30} weight="fill"/>
-               </a>
-
-               <a href="#me">
-                  <UserCircle size={30} weight="fill"/>
-               </a>
-
-               <a href="#contact">
-                  <Chats size={30} weight="fill"/>
-               </a>
-            </div>
+            
 
             <div className="welcome" >           
-               <img src={logo} alt='' className="w-24 absolute right-10 top-10 z-10"/>
+               { !isMobile && <img src={logo} alt='' className="w-24 absolute right-10 top-10 z-10"/>}
  
                <div className="conteudo">
                   <Text fontSize={'xl'} fontWeight={'medium'}>Ola, Bem vindo ao meu protfólio</Text>
-                  <Text fontSize={'3xl'} fontWeight={'semibold'}>Eu sou Gabriel Possas, Dev. Front-End</Text>
+                  <Text fontSize={'3xl'} fontWeight={'semibold'}>Gabriel Possas, Dev. Front-End</Text>
 
                   <Text fontSize={'lg'} fontWeight={'medium'}>Tenho 18 anos, sou de Campo Grande - MS. <br/>Apaixonado por progamar!! E sempre em evolução!!</Text>
 
@@ -62,7 +46,7 @@ export function Home() {
                
             </div>
          </ContainerHome>
-            <img src={dot} alt='' className="absolute -right-20 -bottom-14 z-10"/>
+            <img src={dot} alt='' className="absolute right-2 -bottom-14 z-10"/>
       </Container>
    );
 }

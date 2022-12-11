@@ -61,6 +61,19 @@ module.exports = {
         '20%': {  width: '40px', height: '40px'},
         '100%': {  width: '40px', height: '40px'},
       },
+    },
+    screens: {
+      'sm': '640px',
+
+      'md': '768px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+      
+      'cel': {'max': '639px'},
     }
   },
   plugins: [],
