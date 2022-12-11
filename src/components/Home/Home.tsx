@@ -52,7 +52,7 @@ export function Home() {
                   <Text fontSize={'xl'} fontWeight={'medium'}>Ola, Bem vindo ao meu protfólio</Text>
                   <Text fontSize={'3xl'} fontWeight={'semibold'}>Eu sou Gabriel Possas, Dev. Front-End</Text>
 
-                  <Text fontSize={'lg'}>Tenho 18 anos, sou de Campo Grande-MS, estudo progamação há 1 ano e estou extremamente empolgado em desevenvolver cada vez mais! </Text>
+                  <Text fontSize={'lg'} fontWeight={'medium'}>Tenho 18 anos, sou de Campo Grande - MS. <br/>Apaixonado por progamar!! E sempre em evolução!!</Text>
 
                   <Flex alignItems={'center'}>
                      <a href="https://www.linkedin.com/in/gabriel-borges-p/" rel='noreferrer' target='_blank'><LinkedinLogo size={32} weight="fill" color="#ffffff" /></a>
