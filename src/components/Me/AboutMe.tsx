@@ -9,10 +9,10 @@ export default function AboutMe() {
          <div className="flex relative right-2 rounded-bl-[60px] rounded-tl-[60px] 
             bg-gradient-to-b from-purple-600 to-cyan-600 shadow-boxLg
          ">
-            <div className="ml-1 mr-4 rounded-bl-[60px] text-center w-full rounded-tl-[60px] bg-gray-700 py-10 px-6 text-[19px] text-gray-100/90 font-base
+            <div className="ml-1 mr-4 rounded-bl-[60px] cel:text-center w-full rounded-tl-[60px] bg-gray-700 py-10 cel:px-6 px-10 text-[19px] text-gray-100/90 font-base
                [text-shadow:1px_1px_3px_#111111]
             ">
-               <text className="leading-8">
+               <text className="leading-6 tracking-wide">
                    🙋‍♂️ Olá me chamo <strong>Gabriel Abraão Possas Borges</strong> sou de Campo Grande - MS, tenho 18 anos, 
                   concluí o ensino médio na <strong>Escola do Sesi</strong> cursando o ensino médio técnico, tendo como curso o de 
                   Técnico em Redes. 

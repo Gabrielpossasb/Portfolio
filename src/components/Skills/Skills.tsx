@@ -33,7 +33,7 @@ export function Skills() {
 
    return (
       <div id="skills">
-         <div className="grid-cols-3 grid px-6 mt-16 rounded-md gap-8 relative">
+         <div className="flex cel:w-full px-6 mt-24 rounded-md gap-8 relative">
 
             <div className="pt-20">
                <text className="rotate-180 transform text-gray-800  inline-block text-[96px] font-semibold
@@ -44,11 +44,17 @@ export function Skills() {
             </div>
            
             <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
+               <div className={'flex -mt-6 mb-4'}>
+                  <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-purple-500 to-purple-800 ml-10 mt-8 shadow-box`}/>
+                  <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-gray-900 to-gray-800 ml-10 mt-8 shadow-box`}/>
+                  <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-gray-900 to-gray-800 ml-10 mt-8 shadow-box`}/>
+               </div>
+
                {  skills.map( skill => { delay = delay + 2500; return (
                      <div className={`flex gap-4 w-[250px] items-center duration-300 font-medium -ml-[17px] group relative
-                        hover:cursor-default animate-colorTransitonText
+                        hover:cursor-default animate-colorTransitonText text-cyan-50
                      `} style={{animationDelay: `${delay}ms`}}>
-                        <div className="h-7 w-7 duration-300 rounded-full border-4 border-gray-700 group-hover:bg-cyan-500 animate-colorTransitonBg
+                        <div className="h-7 w-7 duration-300 rounded-full border-4 border-gray-700 animate-colorTransitonBg
                            bg-gradient-to-b from-purple-500 to-purple-800"
                            style={{animationDelay: `${delay}ms`}}
                         />
@@ -61,11 +67,7 @@ export function Skills() {
                }
             </div>
               
-            <div className={'flex'}>
-               <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-purple-500 to-purple-800 ml-10 mt-8 shadow-box`}/>
-               <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-gray-900 to-gray-800 ml-10 mt-8 shadow-box`}/>
-               <button className={`rounded-full w-12 h-4 bg-gradient-to-b from-gray-900 to-gray-800 ml-10 mt-8 shadow-box`}/>
-            </div>
+            
 
             <div>
                <button>{'>'}</button>

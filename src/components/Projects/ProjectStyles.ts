@@ -4,7 +4,7 @@ import { ThemeSelectProps } from "../../App";
 
 export const Container = styled.div <ThemeSelectProps>`
    margin-bottom: 4rem;
-   margin-top: 2rem;
+   margin-top: 8rem;
    width: 100%;
 
    .content {
