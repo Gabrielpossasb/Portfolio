@@ -6,8 +6,10 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
+        insetSideBar: 'inset 0 0 6px 2px #1b1b1b8f',
         insetSoft: 'inset 0 0 10px 5px #1b1a1a8f',
         card: '4px 6px 10px 6px #18191a9c',
+        boxLight: '2px 3px 6px #86709e9c',
         box: '4px 6px 8px #18191a9c',
         boxLg: '4px 6px 8px 4px #18191a9c',
       },
@@ -15,6 +17,7 @@ module.exports = {
         colorTransitonText: 'colorTransitonText 15s ease infinite',
         colorTransitonBg: 'colorTransitonBg 15s ease infinite',
         sizeTransition: 'sizeTransition 15s ease infinite',
+        skillPaginationAlternate: 'skillPaginationAlternate 1s ease ',
       },
       colors: {
         purple: {
@@ -61,6 +64,12 @@ module.exports = {
         '20%': {  width: '40px', height: '40px'},
         '100%': {  width: '40px', height: '40px'},
       },
+      skillPaginationAlternate: {
+        '0%': { transform: 'translateX(0)' },
+        '50%': {  transform: 'translateX(160%)'},
+        '100%': {  transform: 'translateX(0)'},
+      },
+
     },
     screens: {
       'sm': '640px',
@@ -76,5 +85,7 @@ module.exports = {
       'cel': {'max': '639px'},
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
