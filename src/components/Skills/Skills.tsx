@@ -110,7 +110,7 @@ export function Skills() {
             </text>
          </div>
          
-         <div className="pl-4 overflow-hidden w-full h-[580px] sm:w-[500px]">
+         <div className="px-4 overflow-hidden w-full h-[580px] sm:w-[500px]">
             <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
                <div className={'flex -mt-6 mb-6'}>
                   <button onClick={() => handlePagination(0)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-500 ${(pagination === 0 )?'from-purple-500 to-purple-800':'from-gray-900 to-gray-800'}`}/>

@@ -3,14 +3,6 @@ import { darken } from "polished"
 import { ThemeSelectProps } from "../../App";
 
 export const Container = styled.div  <ThemeSelectProps>`
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap-reverse;
-   margin-top: 10rem;
-   padding-bottom: 8rem;
-   max-width: 1100px;
-   gap: 7rem;
-   position: relative;
 
    .icons {
       display: flex;
@@ -23,9 +15,7 @@ export const Container = styled.div  <ThemeSelectProps>`
    .meusDados {
       display: flex;
       height: 100%;
-      min-width: 230px;
-      max-width: 280px;
-      padding: 2rem;
+      padding: 2rem 6rem;
       border-radius: 1rem;
       z-index: 20;
       background: #303030;
