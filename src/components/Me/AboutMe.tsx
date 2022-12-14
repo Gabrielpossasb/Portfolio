@@ -64,7 +64,7 @@ export default function AboutMe() {
                            </div>
 
                            <div>
-                              <text>{'- Trilha Conectar do Discover - Bootcamp Discover Rocketseat - 2022 '}</text>
+                              <text>{'- Trilha Conectar - Bootcamp Discover Rocketseat - 2022 '}</text>
                               
                               <div className="text-sm font-normal flex text-gray-400/60 pl-4">
                                  Código do certificado: <span className="font-medium ml-1">15a754b8-a4f6-47b2-9c00-f494a9ee782b</span> 
@@ -73,7 +73,7 @@ export default function AboutMe() {
                            </div>
 
                            <div>
-                              <text>{'- Trilha Especializar do Discover - Bootcamp Discover Rocketseat - 2022 '}</text>
+                              <text>{'- Trilha Especializar - Bootcamp Discover Rocketseat - 2022 '}</text>
                               
                               <div className="text-sm font-normal flex text-gray-400/60 pl-4">
                                  Código do certificado: <span className="font-medium ml-1"> e45a45e4-bc72-4e9f-8cfc-2f85c880c41a</span> 
@@ -82,7 +82,7 @@ export default function AboutMe() {
                            </div>
 
                            <div>
-                              <text>{'- Trilha Fundamentar do Discover - Bootcamp Discover Rocketseat - 2022 '}</text>
+                              <text>{'- Trilha Fundamentar - Bootcamp Discover Rocketseat - 2022 '}</text>
                               
                               <div className="text-sm font-normal flex text-gray-400/60 pl-4">
                                  Código do certificado: <span className="font-medium ml-1"> 4a131ece-56a1-40e1-9dbb-724f7254766e</span> 
