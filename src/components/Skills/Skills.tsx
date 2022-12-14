@@ -77,7 +77,7 @@ export function Skills() {
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
          },
          { 
-            name: 'Code',
+            name: 'Visual Studio Code',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
          },
       ]
