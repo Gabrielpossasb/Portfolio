@@ -49,7 +49,7 @@ export default function AboutMe() {
                      <div className={'flex flex-col gap-4 '}>
 
                         <text>{'- Ensino Médio - Escola do Sesi - 2019/2021'}</text>
-                        <text>{'- Rocketseat - Plataforma de Estudos - 2022'}</text>
+                        <text>{'- Rocketseat - Plataforma de Estudos Online - 2022'}</text>
 
                         <div className="flex flex-col gap-6 text-lg ">
                            <text className="text-cyan-300 font-medium text-2xl underline underline-offset-8 ml-8 m-4 decoration-cyan-300">{'Ceritficados'}</text>
