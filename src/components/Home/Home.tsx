@@ -1,4 +1,4 @@
-import { Chats, Folder, House, LinkedinLogo, RocketLaunch, UserCircle } from "phosphor-react";
+import { LinkedinLogo } from "phosphor-react";
 import { Container, ContainerHome } from "./HomeStyles";
 import { Flex, Text } from "@chakra-ui/react"
 
@@ -11,7 +11,6 @@ import { useMediaQuery } from "react-responsive";
 import logo from '../../assets/MyLogo.png' 
 import dot from '../../assets/Dots.svg'
 
-import backgroundImg from "../../assets/Bitmap.svg"
 
 
 export function Home() {

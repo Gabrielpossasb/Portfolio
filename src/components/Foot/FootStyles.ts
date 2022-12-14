@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { darken } from "polished"
 import { ThemeSelectProps } from "../../App";
 
 export const Container = styled.div  <ThemeSelectProps>`
@@ -9,7 +8,7 @@ export const Container = styled.div  <ThemeSelectProps>`
       gap: 1rem;
       margin-top: 2rem;
       margin-bottom: 2rem;
-
+      align-items: center;
    }
 
    .meusDados {

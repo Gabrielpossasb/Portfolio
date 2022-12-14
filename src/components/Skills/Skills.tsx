@@ -17,8 +17,8 @@ export function Skills() {
          img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
       },
       { 
-         name: 'GraphQL',
-         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
+         name: 'Next.js',
+         img: 'https://cdn.worldvectorlogo.com/logos/next-js.svg'
       },
       { 
          name: 'TypeScript',
@@ -31,53 +31,53 @@ export function Skills() {
       ],
       [
          { 
-            name: 'React',
-            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+            name: 'SASS',
+            img: 'https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png'
          },
          { 
-            name: 'Consumo de API',
-            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+            name: 'Tailwind CSS',
+            img: 'https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg'
          },
          { 
-            name: 'SSR, SSG',
-            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-         },
-         { 
-            name: 'GraphCMS',
+            name: 'GraphQL',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
          },
          { 
+            name: 'Axios',
+            img: 'https://avatars.githubusercontent.com/u/32372333?s=280&v=4'
+         },
+         { 
             name: 'Fauna DB',
-            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+            img: 'https://retool.com/integrations-logos/faunadb.svg'
          },
          { 
             name: 'Firebase',
-            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            img: 'https://cdn.worldvectorlogo.com/logos/firebase-2.svg'
          },
       ],
       [
          { 
-            name: 'React',
+            name: 'Consumo de API',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
          },
          { 
-            name: 'Consumo de APIsds sdsdsds ds',
+            name: 'Componentização do React',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
          },
          { 
-            name: 'SSR, SSG',
+            name: 'SSR, SSG, SPA',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
          },
          { 
-            name: 'GraphCMS',
+            name: 'Api Routes',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
          },
          { 
-            name: 'Fauna DB',
+            name: 'Metodologia SCRUM',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
          },
          { 
-            name: 'Firebase',
+            name: 'Code',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
          },
       ]
@@ -88,9 +88,10 @@ export function Skills() {
 
    let delay = 0
 
-   function handlePagination(id:number) {
-      setPagination(id)
+   async function handlePagination(id:number) {
       setAlternate(true)
+      await new Promise(resolve => setTimeout(resolve, 500))
+      setPagination(id)
       handleAlternate()
    }
 
@@ -133,7 +134,9 @@ export function Skills() {
 
                               <text className="text-2xl">{skill.name}</text>
 
-                              <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
+                              {  pagination !== 2 && (
+                                 <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
+                              )}
                            </div>
                         </div>
                      )})

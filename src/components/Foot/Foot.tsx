@@ -17,7 +17,7 @@ export function Foot() {
 
    return(
       <Container theme={myTheme}>
-         <div className="flex relative justify-center my-20 mb-40 w-full sm:w-[800px]">
+         <div className="flex relative justify-center my-20 mb-40 w-full sm:w-[600px]">
             <div className="meusDados" id='contact'>
                
                <img src={logo} alt="logo" className="w-28"/>
@@ -26,8 +26,8 @@ export function Foot() {
                <h2 className="font-semibold text-lg text-cyan-500">Dev. Front-End</h2>
                
                <div className="icons">
-                  <a href="https://www.linkedin.com/in/gabriel-borges-p/" target='_blank'><LinkedinLogo size={32} weight="fill" color="#0077B5" /></a>
-                  <a href="https://github.com/Gabrielpossasb" target='_blank' style={{background:'#fff', borderRadius: '100%', height:'34px'}}><DiGithubBadge size={34} color="#21262d" /></a>
+                  <a href="https://www.linkedin.com/in/gabriel-borges-p/" target='_blank' className="rounded-full hover:brightness-50 duration-300"><LinkedinLogo size={38} weight="fill" color="#0077B5" /></a>
+                  <a href="https://github.com/Gabrielpossasb" target='_blank' className="bg-gray-200/90 rounded-full hover:brightness-50 duration-300"><DiGithubBadge size={34} color="#21262d" /></a>
                </div>
 
                <h5>Meu whatsapp:</h5>
@@ -38,7 +38,7 @@ export function Foot() {
             
             </div>
 
-            <img src={dot} alt='' className="absolute -bottom-10 -right-8 z-10"/>
+            <img src={dot} alt='' className="absolute -bottom-10 cel:-right-8 z-10"/>
          </div>
          
       </Container>
