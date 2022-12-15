@@ -113,29 +113,30 @@ export function Skills() {
          
          <div className="px-4 overflow-hidden w-full h-[580px] sm:w-[500px]">
             <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
-               <div className={'flex -mt-6 mb-6'}>
-                  <button onClick={() => handlePagination(0)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-500 ${(pagination === 0 )?'from-purple-500 to-purple-800':'from-gray-900 to-gray-800'}`}/>
-                  <button onClick={() => handlePagination(1)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-500 ${(pagination === 1 )?'from-purple-500 to-purple-800':'from-gray-900 to-gray-800'}`}/>
-                  <button onClick={() => handlePagination(2)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-500 ${(pagination === 2 )?'from-purple-500 to-purple-800':'from-gray-900 to-gray-800'}`}/>
+               <div className={'flex -mt-6 mb-6 items-center'}>
+                  <button onClick={() => handlePagination(0)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 0 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
+                  <button onClick={() => handlePagination(1)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 1 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
+                  <button onClick={() => handlePagination(2)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 2 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
                </div>
+
 
                <div className={`flex flex-col w-full gap-10 relative transition-all 
                   ${alternate ? 'animate-skillPaginationAlternate': ''}
                `}>
                   {  skills[pagination].map( skill => { delay = delay + 2500; return (
-                        <div className="duration-200 w-full relative hover:translate-x-8 hover:cursor-pointer">
-                           <div className={`flex gap-4 w-full items-center duration-300 font-medium sm:-ml-[17px] -ml-[15px] group relative
+                        <div className="duration-200 w-full relative hover:cursor-pointer group">
+                           <div className={`flex gap-4 w-full items-center duration-300 font-medium sm:-ml-[17px] -ml-[15px] relative
                               hover:cursor-default animate-colorTransitonText text-cyan-50
                            `} style={{animationDelay: `${delay}ms`}}>
-                              <div className="h-7 w-7 duration-300 rounded-full border-4 border-gray-800 animate-colorTransitonBg
+                              <div className="h-7 w-7 rounded-full border-4 border-gray-700 animate-colorTransitonBg
                                  bg-gradient-to-b from-purple-500 to-purple-800"
                                  style={{animationDelay: `${delay}ms`}}
                               />
 
-                              <text className="text-2xl">{skill.name}</text>
+                              <text className="text-2xl group-hover:translate-x-8 duration-300">{skill.name}</text>
 
                               {  pagination !== 2 && (
-                                 <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
+                                 <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md group-hover:translate-x-8 duration-300" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
                               )}
                            </div>
                         </div>

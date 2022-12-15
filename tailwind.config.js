@@ -12,6 +12,7 @@ module.exports = {
         boxLight: '2px 3px 6px #86709e9c',
         box: '4px 6px 8px #18191a9c',
         boxLg: '4px 6px 8px 4px #18191a9c',
+        boxPurple: '2px 3px 4px 2px #6e25c060',
       },
       animation: {
         colorTransitonText: 'colorTransitonText 15s ease infinite',
@@ -51,11 +52,11 @@ module.exports = {
         '100%': { color: '#f3f3f3f3'},
       },
       colorTransitonBg: {
-        '0%': { backgroundImage: 'gradient,to bottom, #4514a0, #197fa1'},
-        '8%': { from: '#7328c9' },
-        '16%': { from: '#7328c9' },
-        '20%': { from: '#a474db'},
-        '100%': { from: '#a474db'},
+        '0%': { borderColor: '#303030' },
+        '8%': { borderColor: '#5628ad' },
+        '16%': { borderColor: '#5628ad' },
+        '20%': { borderColor: '#303030'},
+        '100%': { borderColor: '#303030'},
       },
       sizeTransition: {
         '0%': { width: '40px', height: '40px' },
