@@ -3,9 +3,6 @@ import { ThemeSelectProps } from "../../App"
 import backgroundImg from "../../assets/Bitmap.svg"
 
 export const Container = styled.div<ThemeSelectProps>`
-   display: flex;
-   flex-direction: column;
-   position: relative;
    width: 100%;
 `
  

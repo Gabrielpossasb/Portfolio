@@ -6,6 +6,7 @@ export const Container = styled.div <ThemeSelectProps>`
    margin-bottom: 4rem;
    margin-top: 8rem;
    width: 100%;
+   
 
    .content {
       display: flex;
@@ -13,7 +14,7 @@ export const Container = styled.div <ThemeSelectProps>`
       align-items: flex-end;
       width: 100%;
       position: relative;
-
+      overflow: hidden;
    }
 
    .line, .line- {

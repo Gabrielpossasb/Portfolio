@@ -101,7 +101,7 @@ export function Skills() {
    }
 
    return (
-      <div id="skills" className="flex cel:w-full items-center mt-24 bg-gray-800/50 cel:justify-between rounded-md gap-8 px-2 sm:px-20 sm:gap-40 relative overlfow-hidden shadow-boxLg">
+      <div id="skills" className="flex cel:w-full items-center mt-20 bg-gray-800/50 cel:justify-between rounded-md gap-8 px-2 sm:px-20 sm:gap-40 relative overlfow-hidden shadow-boxLg">
 
          <div className="">
             <text className="rotate-180 transform text-gray-800  inline-block cel:text-8xl text-[96px] font-semibold
