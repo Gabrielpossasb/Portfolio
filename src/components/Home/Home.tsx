@@ -25,7 +25,7 @@ export function Home() {
                   { !isMobile && <img src={logo} alt='' className="w-32 opacity-90 absolute right-10 top-10 z-10"/>}
    
                   <div className="p-10 py-16 flex flex-col gap-4 z-20 rounded-3xl text-purple-100 bg-gradient-to-b from-purple-600/30 via-purple-500/30 to-cyan-600/30 shadow-boxLg">
-                     <Text fontSize={'xl'} fontWeight={'medium'}>Ola, Bem vindo ao meu protfólio</Text>
+                     <Text fontSize={'xl'} fontWeight={'medium'}>Olá, Bem vindo ao meu protfólio</Text>
                      <Text fontSize={'4xl'} fontWeight={'semibold'}>Gabriel Possas, Dev. Front-End</Text>
 
                      <Text fontSize={'xl'} fontWeight={'medium'}>Apaixonado por progamar!! Sempre em evolução!!</Text>
