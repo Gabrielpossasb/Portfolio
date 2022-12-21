@@ -31,7 +31,7 @@ export function Projects() {
          img: require('./prints/ignite-shop.png'),
          name: 'Ignite Shop',
          description: 'Ecomerce de camisetas fictício da Rocketseat',
-         tecnologies: ['React.js','Stiches', 'TypeScript', 'Stripe', 'Next.js', 'Fauna DB', 'Api Routes', 'SSR, SSG, SPA'],
+         tecnologies: ['React.js','Stiches', 'TypeScript', 'Stripe', 'Next.js', 'Fauna DB', 'Api Routes', 'SSR, SSG, SPA', 'Figma'],
          open: false,
          website:'https://ignite-shop-phi.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Ignite-Shop'
@@ -39,8 +39,8 @@ export function Projects() {
       {
          img: require('./prints/worldtrip-Home.png'),
          name: 'WorldTrip',
-         description: 'Navegue entre as principais cidades do mundo',
-         tecnologies: ['React.js','Chakra UI', 'TypeScript', 'Swiper', 'Next.js', 'Consumo de APIs', 'Responsividade'],
+         description: 'Navegue entre as principais cidades do mundo - (Responsivo)',
+         tecnologies: ['React.js','Chakra UI', 'TypeScript', 'Swiper', 'Next.js', 'Consumo de APIs', 'Responsividade', 'Figma'],
          open: false,
          website:'http://worldtrip-omega.vercel.app/',
          git:'https://github.com/Gabrielpossasb/worldtrip'
@@ -48,8 +48,8 @@ export function Projects() {
       {
          img: require('./prints/idea-maker.png'),
          name: 'IDEA Maker',
-         description: 'Plaforma para criação de apresentações pré personalizadas',
-         tecnologies: ['React.js','TailwindCSS', 'TypeScript', 'Next.js', 'Responsividade', 'Firebase', 'Autenticação de usuários', 'Amazenamento de dados'],
+         description: 'Plaforma para criação de apresentações pré personalizadas - (Responsivo)',
+         tecnologies: ['React.js','TailwindCSS', 'TypeScript', 'Figma', 'Next.js', 'Responsividade', 'Firebase', 'Autenticação de usuários', 'Amazenamento de dados'],
          open: false,
          website:'https://idea-maker.vercel.app/home',
          git:'https://github.com/Gabrielpossasb/idea-maker'
@@ -66,7 +66,7 @@ export function Projects() {
       {
          img: require('./prints/dashgo-Dashboard.png'),
          name: 'DashGO',
-         description: 'Dashboard de gestão de usuários',
+         description: 'Dashboard de gestão de usuários - (Responsivo)',
          tecnologies: ['React.js','TypeScript','ChackraUI','Mirage.js','ReactQuery', 'Responsividade','Next.js', 'Axios'],
          open: false,
          website:'https://dash-go-ecru.vercel.app/dashboard',
@@ -76,28 +76,47 @@ export function Projects() {
          img: require('./prints/dtmonet.png'),
          name: 'DT Money',
          description: 'Aplicação de balanço de contas',
-         tecnologies: ['React.js','Styled Components','TypeScript','Axios','Miraje.js','Create React App'],
+         tecnologies: ['React.js','Styled Components','TypeScript','Axios','Mirage.js','Create React App', 'Figma'],
          open: false,
          website:'http://aplicacao-balanco-de-contas.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Aplicacao-Balanco-de-Contas'
       },
+      {
+         img: require('./prints/Clone-Uber.png'),
+         name: 'Clone PayPal',
+         description: 'Projeto clone da home do PayPal para praticar estilizações',
+         tecnologies: ['React.js','TailwindCSS','TypeScript','Create React App', 'Landing-Page'],
+         open: false,
+         website:'https://clone-pay-pal.vercel.app/',
+         git:'https://github.com/Gabrielpossasb/Clone-PayPal'
+      },
+      {
+         img: require('./prints/Clone-Paypal.png'),
+         name: 'Clone Uber',
+         description: 'Projeto clone da home da Uber para praticar estilizações',
+         tecnologies: ['React.js','TailwindCSS','TypeScript','Create React App', 'Landing-Page'],
+         open: false,
+         website:'https://clone-uber-rho.vercel.app/',
+         git:'https://github.com/Gabrielpossasb/Clone-Uber'
+      },
    ]);
 
    function handleOpenProject(id: number) {
-      let filtro = projetos.filter((val,index) => index !== id);
-      let filtroAlterador = projetos.filter((val,index) => index === id);
-      let Alterado = {
-         img: filtroAlterador[0].img,
-         name: filtroAlterador[0].name,
-         description: filtroAlterador[0].description,
-         tecnologies: filtroAlterador[0].tecnologies,
-         open: !filtroAlterador[0].open,
-         website: filtroAlterador[0].website,
-         git: filtroAlterador[0].git,
+      //
+      let ItemAlterd = projetos.filter((val,index) => index !== id);
+      let ArraySemItemAltered = projetos.filter((val,index) => index === id);
+      let ArrayAltered = {
+         img: ArraySemItemAltered[0].img,
+         name: ArraySemItemAltered[0].name,
+         description: ArraySemItemAltered[0].description,
+         tecnologies: ArraySemItemAltered[0].tecnologies,
+         open: !ArraySemItemAltered[0].open,
+         website: ArraySemItemAltered[0].website,
+         git: ArraySemItemAltered[0].git,
       };
 
-      filtro.splice(id, 0, Alterado);
-      setprojetos(filtro);
+      ItemAlterd.splice(id, 0, ArrayAltered);
+      setprojetos(ItemAlterd);
    }
 
    return (
@@ -116,7 +135,7 @@ export function Projects() {
 
                <div className="keen-slider" ref={sliderRef}>  
                   {  projetos.map((val, index) => (
-                     <div className='keen-slider__slide'>
+                     <div key={index} className='keen-slider__slide'>
                         <div key={val.name} className={`flex flex-col items-center justify-center bg-gradient-to-b from-gray-700 to-gray-800
                            shadow-card m-4 rounded-md hover:cursor-grab
                         `}>
@@ -128,9 +147,11 @@ export function Projects() {
                                  scrollbar-thin scrollbar-thumb-gray-900/50 scrollbar-track-gray-900/30 scroll-mx-2 scrollbar-corner-inherit
                               ">
                                  <strong className="text-cyan-500/90 text-lg">Conhecimentos Praticados:</strong>
-                                 <div className="grid grid-cols-2 gap-2 h-32 sm:h-44">
-                                    { val.tecnologies.map((tecnology) => (
-                                       <text className="mr-2 w-36 text-center">- {tecnology}</text>
+                                 <div className="grid grid-cols-2 gap-2 h-36 sm:h-48">
+                                    { val.tecnologies.map((tecnology, ind) => (
+                                       <div key={ind} className="flex items-center justify-center">
+                                          <text className="mr-2 w-36 text-center">- {tecnology}</text>
+                                       </div>
                                     ))}
                                  </div>
                               </div>

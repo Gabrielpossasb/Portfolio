@@ -11,10 +11,10 @@ export default function AboutMe() {
             <button className={`rounded-full w-20 h-4 bg-gradient-to-b from-purple-500 to-purple-800 shadow-box`}/>
          </div>
 
-         <div className="flex relative right-2 rounded-bl-[60px] rounded-tl-[60px] 
+         <div className="flex relative right-2 cel:rounded-[40px] rounded-bl-[60px] rounded-tl-[60px] 
             bg-gradient-to-b from-purple-600 to-cyan-600 shadow-boxLg
          ">
-            <div className="ml-1 mr-4 rounded-bl-[60px] cel:text-center w-full rounded-tl-[60px] bg-gray-700 p-10 px-14 cel:10 pb-20 cel:px-6 text-[19px] text-gray-100/90 font-base
+            <div className="ml-1 cel:mr-1 mr-4 cel:rounded-[40px] rounded-bl-[60px] cel:text-center w-full rounded-tl-[60px] bg-gray-700 p-10 px-14 pb-20 cel:px-0 text-[19px] text-gray-100/90 font-base
                [text-shadow:1px_1px_3px_#111111] overflow-hidden relative
             ">
                <text className="leading-6 tracking-wide">
@@ -36,10 +36,10 @@ export default function AboutMe() {
                   Agora após muitos projetos desenvolvidos estou a procura de uma oportunidade de trabalho para colocar meus conhecimentos em prática !!
                </text>
 
-               <div className={`flex flex-col bg-gray-700 rounded-3xl p-4 h-full absolute items-center w-full z-20 duration-700 transition-all 
-                  ${openStudy?'top-8 shadow-insetSoft':'top-[84%] cel:top-[92%]'} 
+               <div className={`flex flex-col bg-gray-700 sm:rounded-2xl rounded-[40px] p-4 h-full absolute items-center w-full z-20 duration-700 transition-all 
+                  ${openStudy?'top-8 cel:top-4 shadow-insetSoft':'top-[84%] cel:top-[92%]'} 
                `}>
-                  <button onClick={() => setOpenStudy(!openStudy)} className={`flex font-medium gap-4 items-center p-2 px-8 rounded-full transition-all duration-300  hover:bg-gray-900/20 
+                  <button onClick={() => setOpenStudy(!openStudy)} className={`flex font-medium gap-4 items-center p-2 px-6 rounded-full transition-all duration-300  hover:bg-gray-900/20 
                      ${openStudy?'text-purple-400 decoration-purple-400 text-2xl duration-1000':'text-cyan-300 text-base duration-1000'} [text-shadow:1px_1px_3px_#311749] underline underline-offset-8
                   `}>
                      Formação Acadêmica <FiChevronDown size={36} className={`duration-500 transition-all ${openStudy?'text-purple-400':'rotate-180'} `}/>

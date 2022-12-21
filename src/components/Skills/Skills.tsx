@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export function Skills() {
 
-   const [ skills, setSkills ] = useState([
+   const [ skills ] = useState([
       [
       { 
          name: 'React',
@@ -77,7 +77,7 @@ export function Skills() {
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
          },
          { 
-            name: 'Visual Studio Code',
+            name: 'Clean-Code',
             img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
          },
       ]
@@ -133,10 +133,10 @@ export function Skills() {
                                  style={{animationDelay: `${delay}ms`}}
                               />
 
-                              <text className="text-2xl group-hover:translate-x-8 duration-300">{skill.name}</text>
+                              <text className="text-2xl group-hover:translate-x-8 duration-200">{skill.name}</text>
 
                               {  pagination !== 2 && (
-                                 <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md group-hover:translate-x-8 duration-300" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
+                                 <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md group-hover:translate-x-8 duration-1000" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
                               )}
                            </div>
                         </div>
