@@ -37,15 +37,9 @@ html {
    }
 }
 
-   html, body { 
-      scroll-behavior: smooth;
-   }
-
-
 html, body {
    -webkit-font-smoothing: antialiased;
 }
-
 
 body, input, textarea, button {
    font-family: 'Poppins', sans-serif;

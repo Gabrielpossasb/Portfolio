@@ -8,7 +8,7 @@ import FootSeparete from "../Foot/FootSeparete";
 export function Dashboard() {
 
 	return (
-		<div className="flex flex-col items-center sm:w-[90%] overflow-y-scroll pl-4">
+		<div className="flex flex-col items-center sm:w-[90%] overflow-y-scroll pl-4 scroll-smooth">
 			<Home/>
 			<Skills/>
 			<Projects/>
