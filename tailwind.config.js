@@ -86,4 +86,7 @@ module.exports = {
       'cel': {'max': '639px'},
     }
   },
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
