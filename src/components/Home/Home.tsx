@@ -9,7 +9,6 @@ import logo from '../../assets/MyLogo.png'
 import dot from '../../assets/Dots.svg'
 
 
-
 export function Home() {
 
    const isMobile = useMediaQuery({ query: '(max-width: 640px)'})

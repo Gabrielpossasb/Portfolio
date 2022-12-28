@@ -1,7 +1,5 @@
 <div align='center'>
 
-   ### :construction: **Projeto em desenvolvimento** :construction: ###
-
    # Portfólio
    
    <img height='140px' src='./public/favicon.ico' alt='logo'/>

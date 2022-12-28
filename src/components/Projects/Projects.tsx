@@ -141,8 +141,8 @@ export function Projects() {
                               <text className="font-bold text-2xl text-cyan-500">{val.name}</text>
                               <text className="text-center">{val.description}</text>
                               
-                              <div className="flex flex-col gap-2 items-center mt-2 w-full px-6 overflow-y-scroll scroll-smooth
-                                 scrollbar-thin scrollbar-thumb-gray-900/50 scrollbar-track-gray-900/30 scroll-mx-2 scrollbar-corner-inherit
+                              <div className="flex flex-col gap-2 items-center mt-2 w-full px-6 overflow-y-scroll 
+                                 
                               ">
                                  <strong className="text-cyan-500/90 text-lg">Conhecimentos Praticados:</strong>
                                  <div className="grid grid-cols-2 gap-2 h-36 sm:h-44">
