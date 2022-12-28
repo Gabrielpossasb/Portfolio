@@ -2,7 +2,6 @@ import ReactModal from "react-modal";
 import { Container, Content } from "./style";
 import logo from '../../assets/MyLogo.svg' 
 import { useContext, useState } from "react";
-import { MyThemeContext } from "../../hooks/useThemeApi";
 import { NavigationContext } from "../../hooks/useNavigation";
 
 ReactModal.setAppElement('#root');
@@ -20,7 +19,6 @@ interface ThemeProps {
  
 
 export function Header() {
-	const { myTheme, selectMyTheme } = useContext(MyThemeContext)
 	const { createNavigation } = useContext(NavigationContext)
 
 	const [modalOpen, setModalOpen ] = useState(false);
@@ -29,12 +27,11 @@ export function Header() {
 	function handleSetTheme(id: string, InfoSelect: string) {
 		createNavigation( InfoSelect )
 
-		selectMyTheme( id )
 	}
 
 	return(
-		<Container theme={myTheme}>
-			<Content theme={myTheme}>
+		<Container>
+			<Content>
 				<div className="spaceNavBar"/>
 			
 				<img src={logo} alt="Logo"/>
@@ -75,9 +72,7 @@ export function Header() {
 							<button onClick={() => setThemeSelect('purple')} className='themPurple'></button>
 							<button onClick={() => setThemeSelect('cian')} className='themCian'></button>
 						</div>
-						<button onClick={() => selectMyTheme( themeSelect )}>
-							SET
-						</button>
+						
 
 						
 					</ReactModal>

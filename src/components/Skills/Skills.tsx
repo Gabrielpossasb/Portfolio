@@ -123,8 +123,8 @@ export function Skills() {
                <div className={`flex flex-col w-full gap-10 relative transition-all 
                   ${alternate ? 'animate-skillPaginationAlternate': ''}
                `}>
-                  {  skills[pagination].map( skill => { delay = delay + 2500; return (
-                        <div className="duration-200 w-full relative hover:cursor-pointer group">
+                  {  skills[pagination].map( (skill, index) => { delay = delay + 2500; return (
+                        <div key={index} className="duration-200 w-full relative hover:cursor-pointer group">
                            <div className={`flex gap-4 w-full items-center duration-300 font-medium sm:-ml-[17px] -ml-[15px] relative
                               hover:cursor-default animate-colorTransitonText text-cyan-50
                            `} style={{animationDelay: `${delay}ms`}}>

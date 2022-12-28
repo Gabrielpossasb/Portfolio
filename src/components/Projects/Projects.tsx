@@ -1,7 +1,6 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Container } from "./ProjectStyles";
 import { IoArrowDown, IoLink } from 'react-icons/io5';
-import { MyThemeContext } from "../../hooks/useThemeApi";
 import { DiGithubBadge } from "react-icons/di";
 import { useKeenSlider } from 'keen-slider/react'
 
@@ -10,7 +9,6 @@ import dotWhite from '../../assets/DotsWhite.svg'
 import { useMediaQuery } from "react-responsive";
 
 export function Projects() {
-   const { myTheme } = useContext(MyThemeContext)
 
    const isMobile = useMediaQuery({ query: '(max-width: 640px)'})
 
@@ -120,7 +118,7 @@ export function Projects() {
    }
 
    return (
-      <Container theme={myTheme}>
+      <Container>
          <div className="content" id='projects'>
 
             <div className={'flex flex-col gap-6 items-center self-center text-[#f3f3f3f3] font-semibold text-5xl [text-shadow:2px_4px_4px_#161515]'}>
@@ -143,11 +141,11 @@ export function Projects() {
                               <text className="font-bold text-2xl text-cyan-500">{val.name}</text>
                               <text className="text-center">{val.description}</text>
                               
-                              <div className="flex flex-col gap-2 items-center mt-2 w-full px-6 overflow-y-scroll 
+                              <div className="flex flex-col gap-2 items-center mt-2 w-full px-6 overflow-y-scroll scroll-smooth
                                  scrollbar-thin scrollbar-thumb-gray-900/50 scrollbar-track-gray-900/30 scroll-mx-2 scrollbar-corner-inherit
                               ">
                                  <strong className="text-cyan-500/90 text-lg">Conhecimentos Praticados:</strong>
-                                 <div className="grid grid-cols-2 gap-2 h-36 sm:h-48">
+                                 <div className="grid grid-cols-2 gap-2 h-36 sm:h-44">
                                     { val.tecnologies.map((tecnology, ind) => (
                                        <div key={ind} className="flex items-center justify-center">
                                           <text className="mr-2 w-36 text-center">- {tecnology}</text>
@@ -170,7 +168,7 @@ export function Projects() {
                            </div>
                            
                            <div className="flex justify-between w-full px-10  p-2 shadow-[_0_-2px_8px_#11111186] rounded-tl-xl rounded-tr-xl">
-                              <button className="p-2 bg-gradient-to-r transition-all w-40 from-cyan-500 to-purple-300 text-lg text-cyan-50 font-medium rounded-md shadow-box
+                              <button className="p-2 bg-gradient-to-t transition-all w-40 from-cyan-600 to-purple-500 text-lg text-cyan-50 font-medium rounded-md shadow-box
                                  hover:brightness-75 duration-300 hover:shadow-boxLg
                               ">
                                  <a target="_blank" rel='noreferrer' href={val.website} className='flex items-center gap-6'>

@@ -23,7 +23,7 @@ export default function AboutMe() {
                   Técnico em Redes. 
                   <br/>
                   <br/>
-                  Desde o primeiro ano me interesseo em progamação e iniciei meu estudos em 2019 na platafortma da 
+                  Desde o primeiro ano me interessei em programação iniciando meus estudos em 2019 na platafortma da 
                   <strong className="text-purple-400"> Danki Code</strong>, na qual adquiri a certificação do curso de <strong> Desenvolvimento de Aplicativos</strong>
                   . 
                   <br/>
