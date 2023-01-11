@@ -35,6 +35,15 @@ export function Projects() {
          git:'https://github.com/Gabrielpossasb/Ignite-Shop'
       },
       {
+         img: require('./prints/GestNews-Home.png'),
+         name: 'Gest News',
+         description: 'Portal de notícias utilizando a api do New York Times. - (Responsivo)',
+         tecnologies: ['React.js','TailwindCSS', 'TypeScript', 'Axios', 'Next.js', 'Api Routes', 'Consumdo de API' ,'Figma', 'Responsividade'],
+         open: false,
+         website:'https://gest-news.vercel.app/',
+         git:'https://github.com/Gabrielpossasb/Gest-News'
+      },
+      {
          img: require('./prints/worldtrip-Home.png'),
          name: 'WorldTrip',
          description: 'Navegue entre as principais cidades do mundo - (Responsivo)',
@@ -42,6 +51,15 @@ export function Projects() {
          open: false,
          website:'http://worldtrip-omega.vercel.app/',
          git:'https://github.com/Gabrielpossasb/worldtrip'
+      },
+      {
+         img: require('./prints/TravelSpace_Home.png'),
+         name: 'Travel Space',
+         description: 'Navegue entre as informações de APIs da Nasa de forma mais clara - (Responsivo)',
+         tecnologies: ['React.js','TailwindCSS', 'TypeScript', 'Axios', 'Next.js', 'Api Routes', 'Consumdo de API' ,'Figma', 'Responsividade'],
+         open: false,
+         website:'https://travel-space-gilt.vercel.app/',
+         git:'https://github.com/Gabrielpossasb/Travel-Space'
       },
       {
          img: require('./prints/idea-maker.png'),

@@ -9,23 +9,23 @@ export function Skills() {
          img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
       },
       { 
-         name: 'HTML5',
-         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
-      },
-      { 
-         name: 'JavaScript',
-         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+         name: 'TypeScript',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
       },
       { 
          name: 'Next.js',
          img: 'https://cdn.worldvectorlogo.com/logos/next-js.svg'
       },
       { 
-         name: 'TypeScript',
-         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+         name: 'Axios',
+         img: 'https://avatars.githubusercontent.com/u/32372333?s=280&v=4'
       },
       { 
-         name: 'CSS',
+         name: 'HTML5',
+         img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+      },
+      { 
+         name: 'CSS3',
          img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
       },
       ],
@@ -39,12 +39,12 @@ export function Skills() {
             img: 'https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg'
          },
          { 
-            name: 'GraphQL',
-            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
+            name: 'JavaScript',
+            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
          },
          { 
-            name: 'Axios',
-            img: 'https://avatars.githubusercontent.com/u/32372333?s=280&v=4'
+            name: 'GraphQL',
+            img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg'
          },
          { 
             name: 'Fauna DB',
