@@ -36,7 +36,7 @@ export default function AboutMe() {
                   Agora após muitos projetos desenvolvidos estou a procura de uma oportunidade de trabalho para colocar meus conhecimentos em prática !!
                </text>
 
-               <div className={`flex flex-col bg-gray-700 sm:rounded-2xl rounded-[40px] p-4 h-full absolute items-center -ml-1 w-[92%] z-20 duration-700 transition-all 
+               <div className={`flex flex-col bg-gray-700 sm:rounded-2xl rounded-[40px] p-4 h-full absolute items-center -ml-1 w-full sm:w-[92%] z-20 duration-700 transition-all 
                   ${openStudy?'top-8 cel:top-4 shadow-insetSoft':'top-[84%] cel:top-[92%]'} 
                `}>
                   <button onClick={() => setOpenStudy(!openStudy)} className={`flex font-medium gap-4 items-center p-2 px-6 rounded-full transition-all duration-300  hover:bg-gray-900/20 
