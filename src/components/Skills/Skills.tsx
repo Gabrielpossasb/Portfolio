@@ -101,50 +101,65 @@ export function Skills() {
    }
 
    return (
-      <div id="skills" className="flex w-full items-center mt-20 bg-gray-800/50 cel:justify-between rounded-md gap-8 px-2 md:px-16 sm:gap-20 lg:gap-40 relative overlfow-hidden shadow-boxLg">
 
-         <div className="">
-            <text className="rotate-180 transform text-gray-800  inline-block cel:text-8xl text-[96px] font-semibold
-            [text-shadow:6px_4px_8px_#161515]" 
-            style={{ writingMode: 'vertical-rl' }}>
-               SKILLS
-            </text>
-         </div>
+      <div className={`flex w-full items-center justify-center`}>
          
-         <div className="px-4 overflow-hidden w-full h-[580px] sm:w-[500px]">
-            <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
-               <div className={'flex -mt-6 mb-6 items-center'}>
-                  <button onClick={() => handlePagination(0)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 0 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
-                  <button onClick={() => handlePagination(1)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 1 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
-                  <button onClick={() => handlePagination(2)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 2 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
-               </div>
+         <div id="skills" className="flex items-center mt-20 bg-gray-800/50 justify-between gap-4 rounded-md px-2 md:px-16 sm:gap-10 lg:gap-40 relative overlfow-hidden shadow-boxLg">
+
+            <div className="">
+
+               <text className="rotate-180 transform text-gray-800  inline-block cel:text-7xl text-[96px] font-semibold
+               [text-shadow:6px_4px_8px_#161515]" 
+               style={{ writingMode: 'vertical-rl' }}>
+                  SKILLS
+               </text>
+
+            </div>
+            
+            <div className="px-4 overflow-hidden w-full h-[580px] sm:w-[500px]">
+
+               <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
+
+                  <div className={'flex -mt-6 mb-6 items-center'}>
+
+                     <button onClick={() => handlePagination(0)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 0 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
+
+                     <button onClick={() => handlePagination(1)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 1 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
+
+                     <button onClick={() => handlePagination(2)} className={`rounded-full w-12 h-4 bg-gradient-to-b ml-10 mt-8 shadow-box transition-all duration-300 ${(pagination === 2 )?'from-purple-500 to-purple-800 shadow-boxPurple':'from-gray-900 to-gray-800 hover:shadow-boxPurple'}`}/>
+
+                  </div>
 
 
-               <div className={`flex flex-col w-full gap-10 relative transition-all 
-                  ${alternate ? 'animate-skillPaginationAlternate': ''}
-               `}>
-                  {  skills[pagination].map( (skill, index) => { delay = delay + 2500; return (
-                        <div key={index} className="duration-200 w-full relative hover:cursor-pointer group">
-                           <div className={`flex gap-4 w-full items-center duration-300 font-medium sm:-ml-[17px] -ml-[15px] relative
-                              hover:cursor-default animate-colorTransitonText text-cyan-50
-                           `} style={{animationDelay: `${delay}ms`}}>
-                              <div className="h-7 w-7 rounded-full border-4 border-gray-700 animate-colorTransitonBg
-                                 bg-gradient-to-b from-purple-500 to-purple-800"
-                                 style={{animationDelay: `${delay}ms`}}
-                              />
+                  <div className={`flex flex-col w-full gap-10 relative transition-all 
+                     ${alternate ? 'animate-skillPaginationAlternate': ''}
+                  `}>
+                     {  skills[pagination].map( (skill, index) => { delay = delay + 2500; return (
+                           <div key={index} className="duration-200 w-full relative hover:cursor-pointer group">
 
-                              <text className="text-2xl group-hover:translate-x-8 duration-200">{skill.name}</text>
+                              <div className={`flex gap-4 w-full items-center duration-300 font-medium sm:-ml-[17px] -ml-[15px] relative
+                                 hover:cursor-default animate-colorTransitonText text-cyan-50
+                              `} style={{animationDelay: `${delay}ms`}}>
 
-                              {  pagination !== 2 && (
-                                 <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md group-hover:translate-x-8 duration-1000" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
-                              )}
+                                 <div className="h-7 w-7 rounded-full border-4 border-gray-700 animate-colorTransitonBg
+                                    bg-gradient-to-b from-purple-500 to-purple-800"
+                                    style={{animationDelay: `${delay}ms`}}
+                                 />
+
+                                 <text className="text-2xl group-hover:translate-x-8 duration-200">{skill.name}</text>
+
+                                 {  pagination !== 2 && (
+                                    <img className="w-10 h-10 ml-auto animate-sizeTransition absolute right-0 rounded-md group-hover:translate-x-8 duration-1000" style={{animationDelay: `${delay}ms`}} src={skill.img} alt=''/>
+                                 )}
+                              </div>
                            </div>
-                        </div>
-                     )})
-                  }
+                        )})
+                     }
+                  </div>
                </div>
             </div>
          </div>
       </div>
+
    );
 }

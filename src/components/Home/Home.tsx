@@ -17,9 +17,9 @@ export function Home() {
    return(
       <Container id='home'>
          
-         <div className="relative mt-14 mx-10 sm:ml-10 ">
+         <div className="relative mt-14 mx-10 sm:ml-10 flex justify-center items-center">
 
-            <div className=" relative max-w-[1000px] rounded-3xl shadow-boxXl">
+            <div className=" relative max-w-[1000px] rounded-3xl shadow-boxXl w-full">
                
                <div
                   className="absolute top-0 left-0 bottom-0 rght-0 animate-homePulse1 rounded-3xl bg-gradient-to-b from-purple-300/60 via-purple-500/40 to-cyan-600/40 blur-sm"

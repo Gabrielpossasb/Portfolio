@@ -36,11 +36,11 @@ export default function AboutMe() {
             bg-gradient-to-b from-purple-600 to-cyan-600 shadow-boxLg
          ">
 
-            <div className="ml-1 cel:mr-1 mr-4 cel:rounded-[40px] flex flex-col rounded-bl-[60px] gap-10 cel:text-center w-full rounded-tl-[60px] bg-gray-700 p-10 cel:px-0 text-[16px] sm:text-[19px] text-gray-100/90 font-base
+            <div className="ml-1 cel:mr-1 mr-4 cel:rounded-[40px] flex flex-col rounded-bl-[60px] gap-10 cel:text-center w-full rounded-tl-[60px] bg-gray-700 p-2 pb-6 cel:px-0 text-[16px] sm:text-[19px] text-gray-100/90 font-base
                [text-shadow:1px_1px_3px_#111111] relative leading-6 tracking-wide
             ">
 
-               <div className="flex text-left py-4 w-full border-b-4 border-gray-800 relative rounded-lg ">
+               <div className="flex text-left py-4 w-full border-b-4 border-gray-800 relative ">
 
                   <Eu/>
 
@@ -56,7 +56,7 @@ export default function AboutMe() {
 
                   <div ref={ref} className="keen-slider">
 
-                     <div className="flex items-center sm:gap-20 rounded-full overflow-hidden">
+                     <div className="flex items-center sm:gap-20 overflow-hidden">
 
                         { nav.map( (val, id) => (
 
