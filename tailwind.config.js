@@ -12,6 +12,7 @@ module.exports = {
         boxLight: '2px 3px 6px #86709e9c',
         box: '4px 6px 8px #18191a9c',
         boxLg: '4px 6px 8px 4px #18191a9c',
+        boxXl: '4px 6px 10px 4px #0c0c0c88',
         boxPurple: '2px 3px 4px 2px #6e25c060',
       },
       animation: {
@@ -19,6 +20,9 @@ module.exports = {
         colorTransitonBg: 'colorTransitonBg 15s ease infinite',
         sizeTransition: 'sizeTransition 15s ease infinite',
         skillPaginationAlternate: 'skillPaginationAlternate 1s ease ',
+        homePulse1: ' homePulse 2.5s ease  infinite',
+        homePulse2: 'homePulse 2.5s ease 1s infinite',
+        
       },
       colors: {
         purple: {
@@ -41,6 +45,9 @@ module.exports = {
           '800': '#222121',
           '900': '#131313',
         }
+      ,},
+      backgroundImage: {
+        'backgroundHome': "url('/src/assets/Bitmap.svg')"
       }
     },
     keyframes: {
@@ -69,6 +76,11 @@ module.exports = {
         '0%': { transform: 'translateX(0)' },
         '50%': {  transform: 'translateX(160%)'},
         '100%': {  transform: 'translateX(0)'},
+      },
+      homePulse: {
+        '0%': { top: '0px', right: '0px', left: '0px', bottom: '0px', opacity: '100' },
+        '98%': { top: '-32px', right: '-32px', left: '-32px', bottom: '-32px', opacity: '0'},
+        '100%': { top: '0px', right: '0px', left: '0px', bottom: '0px', opacity: '0'},
       },
 
     },

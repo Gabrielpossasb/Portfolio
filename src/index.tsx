@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from './App';
 import { NavigationProvider } from './hooks/useNavigation';
 import { GlobalStyle } from './styles/global';
+import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 import './styles/global.css';
 

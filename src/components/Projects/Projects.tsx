@@ -52,6 +52,7 @@ export function Projects() {
          website:'http://worldtrip-omega.vercel.app/',
          git:'https://github.com/Gabrielpossasb/worldtrip'
       },
+      /*
       {
          img: require('./prints/TravelSpace_Home.png'),
          name: 'Travel Space',
@@ -61,6 +62,7 @@ export function Projects() {
          website:'https://travel-space-gilt.vercel.app/',
          git:'https://github.com/Gabrielpossasb/Travel-Space'
       },
+      */
       {
          img: require('./prints/idea-maker.png'),
          name: 'IDEA Maker',
@@ -175,7 +177,7 @@ export function Projects() {
                               <div className={`absolute bg-gradient-to-b from-gray-700 to-gray-800 rounded-lg bottom-0 flex mx-2 mb-4 flex-col top-24 items-center duration-700 ${val.open?'translate-y-56 sm:translate-y-60 shadow-insetSoft':''} `}>
                                  <button 
                                     onClick={() => handleOpenProject(index)}
-                                    className="text-cyan-500/80 hover:text-cyan-500 font-medium text-base w-32 hover:bg-gray-800 transition-all px-2 p-1 rounded-xl duration-500 flex items-center justify-between my-2
+                                    className="text-cyan-500/80 hover:text-cyan-500 font-medium bg-gray-800/60 text-base w-32 hover:bg-gray-800 hover:animate-ping transition-all px-2 p-1 rounded-xl duration-500 flex items-center justify-between my-2
                                  ">
                                     { !val.open ? 'Ver mais': 'Ver menos'}
                                     <IoArrowDown size={24} className={`${val.open?'rotate-180 duration-700':'rotate-0 duration-700'}`}/>

@@ -9,23 +9,13 @@ export const Container = styled.div<ThemeSelectProps>`
 
 export const ContainerHome = styled.div <ThemeSelectProps>`
    display: flex;
-   width: 100%;
+   
    flex-direction: row;
    align-items: center;
    justify-content: center;
    margin-top: 2rem;
 
-   .welcome {
-      background-size: cover;
-      width: 100%;
-      max-width: 1000px;
-      background-image: url(${backgroundImg});
-      border-radius: 25px; 
-      margin: 3rem 3rem 0 3rem;
-      position: relative;
-      z-index: 20;
-      background-color: #22222200;
-      box-shadow: inset 2px 2px 15px 8px #1d0c29ce;
+   
 
       .conteudo {
          padding: 4rem;
@@ -47,7 +37,7 @@ export const ContainerHome = styled.div <ThemeSelectProps>`
          a {
             margin-right: 1rem;
          }
-      }
+      
    }
 
    

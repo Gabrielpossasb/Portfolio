@@ -1,6 +1,8 @@
 import { Dashboard } from './components/Dashboard/Dashboard';
 import { Chats, Folder, House, RocketLaunch, UserCircle } from "phosphor-react";
 
+
+
 export interface ThemeSelectProps {
 	theme: {
 		id: string,
@@ -16,7 +18,7 @@ export interface ThemeSelectProps {
 export function App() {
 	
 	return (
-		<div className='bg-[#303030] flex w-[100vw] justify-end h-[100vh] overflow-hidden'>
+		<div className='bg-[#303030] flex w-[100vw] justify-end h-[100vh] overflow-y-scroll overflow-x-hidden'>
 			<div className="sm:fixed z-50 sm:bottom-auto sm:left-4 lg:left-10 sm:top-10 flex sm:w-auto sm:flex-col gap-6 sm:rounded-xl sm:px-2 py-4 sm:shadow-box text-purple-100
 				bg-gradient-to-b from-purple-600 via-purple-500 to-cyan-600 sm:hover:shadow-boxLight transition-all duration-1000
 
