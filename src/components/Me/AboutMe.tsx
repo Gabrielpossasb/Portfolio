@@ -61,6 +61,7 @@ export default function AboutMe() {
                         { nav.map( (val, id) => (
 
                            <button 
+                              key={id}
                               onClick={() => setSelectNav(val)}
                               className={`keen-slider__slide number-slide${id + 1}`}
                               
