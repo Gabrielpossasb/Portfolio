@@ -40,7 +40,7 @@ export default function AboutMe() {
                [text-shadow:1px_1px_3px_#111111] relative leading-6 tracking-wide
             ">
 
-               <div className="flex text-left py-4 w-full relative shadow-boxLg rounded-lg ">
+               <div className="flex text-left py-4 w-full border-b-4 border-gray-800 relative rounded-lg ">
 
                   <Eu/>
 
