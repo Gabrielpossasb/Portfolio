@@ -18,7 +18,7 @@ export default function AboutMe() {
 
    const [ref] = useKeenSlider<HTMLDivElement>({
       slides: {
-        perView: (isMobile===true ? 2.3 : 3.3),
+        perView: (isMobile===true ? 2.3 : 3.4),
         spacing: 4,
       },
     })
@@ -32,15 +32,15 @@ export default function AboutMe() {
             <button className={`rounded-full w-20 h-4 bg-gradient-to-b from-purple-500 to-purple-800 shadow-box`}/>
          </div>
 
-         <div className="flex relative w-full right-2 cel:rounded-[40px] rounded-bl-[60px] rounded-tl-[60px] 
+         <div className="flex w-[96%] max-w-[1000px] mr-2 ml-2 rounded-bl-[60px] rounded-tl-[60px] 
             bg-gradient-to-b from-purple-600 to-cyan-600 shadow-boxLg
          ">
 
-            <div className="ml-1 cel:mr-1 mr-4 cel:rounded-[40px] flex flex-col rounded-bl-[60px] gap-10 cel:text-center w-full rounded-tl-[60px] bg-gray-700 p-2 pb-6 cel:px-0 text-[16px] sm:text-[19px] text-gray-100/90 font-base
+            <div className="ml-2 my-[2px] flex flex-col rounded-bl-[60px] gap-10 w-full rounded-tl-[60px] bg-gray-700 pb-6 text-[16px] sm:text-[19px] text-gray-100/90 font-base
                [text-shadow:1px_1px_3px_#111111] relative leading-6 tracking-wide
             ">
 
-               <div className="flex text-left py-4 w-full border-b-4 border-gray-800 relative ">
+               <div className="flex text-left py-4 w-full border-b-4 border-gray-800 relative rounded-tl-[60px] overflow-hidden">
 
                   <Eu/>
 
@@ -52,7 +52,7 @@ export default function AboutMe() {
 
                </div>
 
-               <div className="flex px-3 ">
+               <div className="flex pl-10 px-4">
 
                   <div ref={ref} className="keen-slider">
 

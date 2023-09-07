@@ -102,9 +102,9 @@ export function Skills() {
 
    return (
 
-      <div className={`flex w-full items-center justify-center`}>
+      <div className={`flex w-full items-center max-w-[800px] justify-center p-4 mt-20`}>
          
-         <div id="skills" className="flex items-center mt-20 bg-gray-800/50 justify-between gap-4 rounded-md px-2 md:px-16 sm:gap-10 lg:gap-40 relative overlfow-hidden shadow-boxLg">
+         <div id="skills" className="flex items-center w-full max-w-[800px]  bg-gray-800/50 justify-between gap-4 rounded-md px-2 md:px-16 sm:gap-10 lg:gap-32 relative overlfow-hidden shadow-boxLg">
 
             <div className="">
 
@@ -116,7 +116,7 @@ export function Skills() {
 
             </div>
             
-            <div className="px-4 overflow-hidden w-full h-[580px] sm:w-[500px]">
+            <div className="px-4 overflow-hidden w-full h-[580px] ">
 
                <div className="flex flex-col gap-14 h-full py-14 border-l-[6px] border-purple-600/80">
 

@@ -11,7 +11,7 @@ export function Foot() {
 
    return(
       <Container>
-         <div className="flex relative justify-center my-20 mb-40 w-full sm:w-[600px]">
+         <div className="flex relative justify-center mt-20 w-full sm:w-[600px]">
             <div className="meusDados" id='contact'>
                
                <img src={logo} alt="logo" className="w-28"/>
