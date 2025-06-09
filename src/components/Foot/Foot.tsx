@@ -28,7 +28,7 @@ export function Foot() {
                <h5>(67) 9 9935-9933</h5>
                <div className={`rounded-full w-8 h-2 bg-gradient-to-b from-cyan-500 to-cyan-800 my-4 shadow-box`}/>
                <h5>Meu Gmail:</h5>
-               <h5>gabrielpossasb@gmail</h5>
+               <h5>gabrielpossasb@gmail.com</h5>
             
             </div>
 

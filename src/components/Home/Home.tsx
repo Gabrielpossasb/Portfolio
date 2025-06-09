@@ -22,10 +22,10 @@ export function Home() {
             <div className=" relative max-w-[1000px] rounded-3xl shadow-boxXl w-full">
                
                <div
-                  className="absolute top-0 left-0 bottom-0 rght-0 animate-homePulse1 rounded-3xl bg-gradient-to-b from-purple-300/60 via-purple-500/40 to-cyan-600/40 blur-sm"
+                  className="absolute top-0 left-0 bottom-0 right-0 animate-homePulse1 rounded-3xl bg-gradient-to-b from-purple-300/60 via-purple-500/40 to-cyan-600/40 blur-sm"
                />
                <div
-                  className="absolute top-0 left-0 bottom-0 rght-0 animate-homePulse2 rounded-3xl bg-gray-700/60 blur-sm"
+                  className="absolute top-0 left-0 bottom-0 right-0 animate-homePulse2 rounded-3xl bg-gray-700/60 blur-sm"
                />
                
                <div className="w-full relative max-w-[1000px] max-h-[500px] z-10 rounded-3xl flex items-center justify-center overflow-hidden" >   
