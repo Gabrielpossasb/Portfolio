@@ -1,0 +1,61 @@
+[
+	{
+		"id": "red",
+		"background": "#241818ab",
+		"textFundo":"#cc1616",
+		"button":"#c72e2e",
+		"border": "#862f2f",  
+		"navSide": "#cf231daf",
+		"light": "rgba(187, 32, 92, 0.7)",
+		"line": "#b32727",
+		"bgWelcome": "#6d1c1cb6"
+		
+	},
+	{
+		"id": "cian",
+		"background": "#0d1c24be",
+		"textFundo":"#2dd9e6",
+		"button":"#1a7a83",
+		"border": "#62afb4",
+		"navSide": "#22ced496",
+		"light": "rgba(156, 39, 176, 0.7)",
+		"line": "#077981",
+		"bgWelcome": "#0c6170b2"
+		
+	},
+	{
+		"id": "purple",
+		"background": "#361644af",
+		"textFundo": "#7b16ee",
+		"button":"#461183",
+		"border": "#a354c2",
+		"navSide": "#4b1ba5c5",
+		"light": "rgba(156, 39, 176, 0.7)",
+		"line": "#671ac09a",
+		"bgWelcome": "#7815859a"
+		
+	},
+	{
+		"id": "yellow",
+		"background": "#352806ab",
+		"textFundo":"#f7d61e",
+		"button":"#b19b21",
+		"border": "#cbce14",
+		"navSide": "#cca216",
+		"light": "#bf0fd65e",
+		"line": "#dfac07",
+		"bgWelcome": "#b39512c9"
+		
+	},
+	{
+		"id": "black",
+		"background": "#18181aff",
+		"textFundo":"#18181aff",
+		"button":"#18181aff",
+		"border": "#18181aff",
+		"navSide": "#18181aff",
+		"light": "#18181aff",
+		"line": "#18181aff",
+		"bgWelcome": "#18181aff"
+	}
+]
