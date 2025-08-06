@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://portfolio-gabrielpossasb.vercel.app/",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@chakra-ui/react": "^2.3.4",
     "@emotion/react": "^11.10.4",
