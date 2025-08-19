@@ -134,10 +134,10 @@ export function Skills() {
 
       <div className="flex w-full items-center justify-center px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20 lg:mt-24">
          
-         <div id="skills" className="flex items-center w-full max-w-[900px] bg-gray-800/50 justify-between gap-2 sm:gap-4 lg:gap-8 rounded-lg sm:rounded-xl px-3 sm:px-8 lg:px-16 relative overflow-hidden shadow-boxLg backdrop-blur-sm">
+         <div id="skills" className="flex items-center w-full max-w-[900px] bg-gray-700 justify-between gap-2 sm:gap-4 lg:gap-8 rounded-lg sm:rounded-xl px-3 sm:px-8 lg:px-16 relative overflow-hidden shadow-boxLg backdrop-blur-sm">
 
             <div className="hidden sm:block">
-               <text className="rotate-180 transform text-gray-800 inline-block text-6xl sm:text-7xl lg:text-8xl font-bold
+               <text className="rotate-180 transform text-[#192225] inline-block text-6xl sm:text-7xl lg:text-8xl font-bold
                [text-shadow:4px_3px_6px_#161515] transition-all duration-300 hover:scale-105" 
                style={{ writingMode: 'vertical-rl' }}>
                   SKILLS

@@ -17,7 +17,7 @@ export const Container = styled.div  <ThemeSelectProps>`
       padding: 2rem 6rem;
       border-radius: 1rem;
       z-index: 20;
-      background: #303030;
+      background: #1d272bf3;
       color: #fff;
       align-items: center;
       justify-content: center;

@@ -18,7 +18,7 @@ export interface ThemeSelectProps {
 export function App() {
 	
 	return (
-		<div className='bg-[#303030] flex cel:flex-col-reverse overflow-hidden scroll-smooth'>
+		<div className='bg-[#253236] flex cel:flex-col-reverse overflow-hidden scroll-smooth'>
 			
 			<div className='flex items-start z-50  justify-center w-full p-8 cel:max-h-[15vh] sm:max-w-[10vw] scroll-smooth shadow-purple'>
 

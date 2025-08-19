@@ -9,7 +9,7 @@ module.exports = {
         insetSideBar: 'inset 0 0 6px 2px #1b1b1b8f',
         insetSoft: 'inset 0 0 10px 5px #1b1a1a8f',
 
-        card: '4px 6px 10px 6px #18191a9c',
+        card: '2px 6px 10px rgba(0,0,0,0.25)',
         purple: '0px -4px 8px 2px #1b1b1b70',
 
         boxLight: '2px 3px 6px #86709e9c',
@@ -44,7 +44,7 @@ module.exports = {
         },
         gray: {
           '300': '#c2c2c2',
-          '700': '#303030',
+          '700': '#1d272b',
           '800': '#222121',
           '900': '#131313',
         }
