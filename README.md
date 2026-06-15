@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# 💼 Portfólio Pessoal — Gabriel Possas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do meu portfólio pessoal e profissional, desenvolvido para apresentar meus projetos, competências acadêmicas/profissionais e minha trajetória como desenvolvedor.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Core:** [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vite.dev/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+- **Roteamento:** [React Router](https://reactrouter.com/)
 
-## React Compiler
+## 📂 Estrutura do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto conta com as seguintes seções:
+- **Início:** Apresentação rápida e destaques de projetos e atividades de IHC.
+- **Sobre mim:** Minha história, trajetória na programação, stack técnica e interesses.
+- **Currículo:** Formação acadêmica, experiência profissional, projetos de estudo e competências.
+- **Contato:** Formulário de envio de mensagens e links de redes sociais.
+- **Ajuda:** Detalhes sobre a disciplina de IHC (Interação Humano-Computador) e heurísticas de usabilidade aplicadas.
 
-## Expanding the ESLint configuration
+## 💻 Como Executar Localmente
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Gabrielpossasb/Portfolio.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+4. Acesse o endereço indicado no terminal (geralmente `http://localhost:5173`).
