@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre | Gabriel Possas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+    .avatar {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #4f46e5);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 4.5rem;
+      border: 4px solid var(--border);
+    }
+    .avatar-name { font-weight: 700; font-size: 1rem; text-align: center; }
+    .avatar-role { font-size: 0.8rem; color: var(--text-muted); text-align: center; }
+    .interest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; }
+    .interest-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 12px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: border-color .2s;
+    }
+    .interest-item:hover { border-color: var(--accent-light); }
+    .interest-icon { font-size: 1.6rem; margin-bottom: 8px; }
+    .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 14px; }
+    .skill-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: border-color .2s, transform .2s;
+    }
+    .skill-item:hover { border-color: var(--accent-light); transform: translateY(-2px); }
+    .skill-item img { width: 36px; height: 36px; }
+    @media (max-width: 680px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .avatar-wrap { flex-direction: row; align-items: center; }
+      .avatar { width: 80px; height: 80px; font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">GP<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html" class="active">Sobre</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="ajuda.html">Ajuda</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-hero">
+      <p class="section-label">Sobre mim</p>
+      <h1>Quem sou eu</h1>
+      <p>Desenvolvedor, estudante e empreendedor de Campo Grande, MS.</p>
+    </div>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="section" style="padding-top:0;">
+      <div class="about-grid">
+        <div class="avatar-wrap">
+          <div class="avatar">👨‍💻</div>
+          <p class="avatar-name">Gabriel Possas</p>
+          <p class="avatar-role">Estudante · Dev</p>
+        </div>
+        <div>
+          <h2 style="margin-bottom:20px;">Minha história</h2>
+          <p style="margin-bottom:16px;">
+            🙋‍♂️ Olá! Me chamo <strong>Gabriel Abraão Possas Borges</strong>, sou de Campo Grande - MS e tenho 19 anos. Concluí o ensino médio técnico na Escola do Sesi, tendo como curso o de <strong>Técnico em Redes de Computadores</strong>, onde meu contato com infraestrutura despertou minha paixão pela programação.
+          </p>
+          <p style="margin-bottom:16px;">
+            📚 Desde o primeiro ano me interessei por programação, iniciando meus estudos em 2019 na plataforma da Danki Code, na qual adquiri a certificação do curso de Desenvolvimento de Aplicativos.
+          </p>
+          <p style="margin-bottom:16px;">
+            💻 Conforme me aprofundava, comecei a ter interesse pelo desenvolvimento front-end e conheci a plataforma Rocketseat, onde concluí as 3 trilhas do bootcamp Discover e, posteriormente, adquiri o Ignite, especializando-me principalmente em <strong>React.js, TypeScript e Next.js</strong>, dentre muitas outras bibliotecas e tecnologias.
+          </p>
+          <p>
+            🎓 Hoje, após muitos projetos práticos desenvolvidos (incluindo assistentes inteligentes com IA e sistemas web/mobile), estou cursando o bacharelado em <strong>Sistemas de Informação na UFMS</strong> (ingresso em 2024) e estou à procura de uma oportunidade de trabalho para colocar meus conhecimentos em prática, colaborar em projetos reais e iniciar minha trajetória profissional!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- HABILIDADES TÉCNICAS -->
+    <section class="section" style="padding-top:0;">
+      <p class="section-label">Habilidades</p>
+      <h2 style="margin-bottom:40px;">Stack técnica</h2>
+      <div class="skill-grid">
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />HTML5</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />CSS3</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />JavaScript</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />TypeScript</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />React</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" />TailwindCSS</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />Node.js</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />Python</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />PostgreSQL</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />Git</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />GitHub</div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />VS Code</div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- INTERESSES -->
+    <section class="section" style="padding-top:0; padding-bottom:80px;">
+      <p class="section-label">Interesses</p>
+      <h2 style="margin-bottom:32px;">O que me move</h2>
+      <div class="interest-grid">
+        <div class="interest-item"><div class="interest-icon">🧠</div>Inteligência Artificial</div>
+        <div class="interest-item"><div class="interest-icon">🌐</div>Desenvolvimento Web</div>
+        <div class="interest-item"><div class="interest-icon">📊</div>Automação</div>
+        <div class="interest-item"><div class="interest-icon">🎮</div>Jogos & Gamificação</div>
+        <div class="interest-item"><div class="interest-icon">📂</div>Open Source</div>
+        <div class="interest-item"><div class="interest-icon">🔬</div>Computação Científica</div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Gabriel Possas · Campo Grande, MS · Feito com HTML & CSS</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Possas | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── HERO ── */
+    .hero {
+      min-height: calc(100vh - var(--nav-h));
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(124,58,237,.18) 0%, transparent 65%);
+      top: -100px; right: -100px;
+      pointer-events: none;
+    }
+    .hero-content { position: relative; max-width: 720px; }
+    .hero-greeting {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+    .hero-title .gradient {
+      background: linear-gradient(135deg, var(--accent-light), #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
+    .hero-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+
+    /* ── PROJECTS ── */
+    .project-card { display: flex; flex-direction: column; gap: 14px; }
+    .project-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .project-icon { font-size: 1.6rem; }
+    .project-link {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 10px;
+      transition: all .18s;
+    }
+    .project-link:hover { color: var(--accent-light); border-color: var(--accent-light); }
+    .project-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+    .project-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; }
+
+    /* ── IHC ACTIVITIES ── */
+    .activity-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .activity-badge {
+      width: 48px; height: 48px;
+      background: var(--accent-dim);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .activity-date { font-size: 0.75rem; color: var(--accent-light); font-weight: 600; margin-bottom: 3px; }
+    .activity-name { font-weight: 700; font-size: 0.95rem; }
+    .activity-desc { font-size: 0.8rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">GP<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="ajuda.html">Ajuda</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Olá, eu sou</p>
+        <h1 class="hero-title">Gabriel<br><span class="gradient">Possas</span></h1>
+        <p class="hero-subtitle">
+          Desenvolvedor Front-End e Mobile, estudante de Sistemas de Informação na UFMS.
+          Apaixonado por construir soluções web e mobile completas, do front-end ao back-end.
+        </p>
+        <div class="hero-btns">
+          <a href="curriculo.html" class="btn btn-primary">Ver Currículo</a>
+          <a href="contato.html" class="btn btn-outline">Entrar em Contato</a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS EM DESTAQUE -->
+  <section class="section" style="background: var(--surface);">
+    <div class="container">
+      <p class="section-label">Projetos</p>
+      <h2 style="margin-bottom: 40px;">O que tenho construído</h2>
+      <div class="grid-2">
+
+        <div class="card project-card">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <a href="https://github.com/Gabrielpossasb/jarvis-whatsapp" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <div>
+            <p class="project-title">JARVIS — Assistente WhatsApp</p>
+            <p style="font-size:.875rem;">Assistente pessoal via WhatsApp com inteligência artificial. Gerencia tarefas, controla finanças e importa extratos bancários de forma conversacional.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-gray">Node.js</span>
+            <span class="tag tag-gray">GPT-4o-mini</span>
+            <span class="tag tag-gray">Supabase</span>
+            <span class="tag tag-gray">Railway</span>
+            <span class="tag tag-gray">React</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header">
+            <span class="project-icon">🎓</span>
+            <a href="https://github.com/Gabrielpossasb/JARVIS-Academico" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <div>
+            <p class="project-title">JARVIS Acadêmico</p>
+            <p style="font-size:.875rem;">Assistente acadêmico inteligente desenvolvido com Python, utilizando RAG, Tool Calling e o modelo Gemma 12B.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-gray">Python</span>
+            <span class="tag tag-gray">RAG</span>
+            <span class="tag tag-gray">Gemma 12B</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header">
+            <span class="project-icon">📰</span>
+            <div style="display:flex; gap:8px;">
+              <a href="https://github.com/Gabrielpossasb/Gest-News" target="_blank" class="project-link">GitHub ↗</a>
+              <a href="https://gest-news.vercel.app/" target="_blank" class="project-link">Ver site ↗</a>
+            </div>
+          </div>
+          <div>
+            <p class="project-title">Gest News</p>
+            <p style="font-size:.875rem;">Portal de notícias desenvolvido em React e TypeScript, utilizando a API do jornal New York Times.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-gray">React</span>
+            <span class="tag tag-gray">TypeScript</span>
+            <span class="tag tag-gray">API NYT</span>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-header">
+            <span class="project-icon">💼</span>
+            <div style="display:flex; gap:8px;">
+              <a href="https://github.com/Gabrielpossasb/Portfolio" target="_blank" class="project-link">GitHub ↗</a>
+              <a href="https://portfolio-gabrielpossasb.vercel.app" target="_blank" class="project-link">Ver site ↗</a>
+            </div>
+          </div>
+          <div>
+            <p class="project-title">Portfólio Pessoal</p>
+            <p style="font-size:.875rem;">Portfólio profissional desenvolvido em React com TypeScript e TailwindCSS, hospedado na Vercel com deploy contínuo via GitHub.</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-gray">React</span>
+            <span class="tag tag-gray">TypeScript</span>
+            <span class="tag tag-gray">TailwindCSS</span>
+            <span class="tag tag-gray">Vercel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ATIVIDADES IHC -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">IHC — 2026.1</p>
+      <h2 style="margin-bottom: 12px;">Atividades da Disciplina</h2>
+      <p style="margin-bottom: 40px; max-width: 520px;">Atividades avaliativas desenvolvidas ao longo do semestre na disciplina de Interação Humano-Computador.</p>
+
+      <div class="grid-2">
+        <div class="activity-card">
+          <div class="activity-badge">📋</div>
+          <div>
+            <p class="activity-date">08/04/2026 · A1</p>
+            <p class="activity-name">Análise de Interface — WhatsApp</p>
+            <p class="activity-desc">Análise crítica da interface do WhatsApp, identificando 3 características positivas (usabilidade, feedback do sistema, eficiência na comunicação) e 3 negativas (excesso de notificações, organização das conversas e busca de mensagens).</p>
+          </div>
+        </div>
+        <div class="activity-card" style="border-color: rgba(167,139,250,.4);">
+          <div class="activity-badge">🌐</div>
+          <div>
+            <p class="activity-date">15/06/2026 · A3</p>
+            <p class="activity-name">Portfólio Web — Este projeto</p>
+            <p class="activity-desc">Protótipo de portfólio pessoal em HTML/CSS com 5 páginas e heurísticas de usabilidade</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Gabriel Possas · Campo Grande, MS · Feito com HTML & CSS</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /tmp/vite-scaffold)",
+      "Read(//tmp/**)",
+      "Bash(yes)",
+      "Bash(npm create *)",
+      "Bash(mkdir -p legacy-html)",
+      "Bash(mv index.html sobre.html contato.html curriculo.html ajuda.html style.css legacy-html/)",
+      "Bash(cp -r /tmp/vite-scaffold/app/. .)",
+      "Read(//c/c/Users/Admin/Documents/TRAMPO/**)",
+      "Bash(npm install *)"
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajuda | Gabriel Possas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 60px;
+    }
+    .summary-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: .875rem;
+      font-weight: 500;
+    }
+    .summary-num {
+      width: 28px; height: 28px;
+      background: var(--accent-dim);
+      color: var(--accent-light);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Sora', sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .design-table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+    .design-table th {
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .design-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: .875rem;
+      vertical-align: top;
+    }
+    .design-table tr:hover td { background: var(--surface); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">GP<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="ajuda.html" class="active">Ajuda</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-hero">
+      <p class="section-label">Ajuda & Documentação</p>
+      <h1>Design, Usabilidade<br>e Heurísticas</h1>
+      <p>Documentação das decisões de design e das heurísticas de usabilidade aplicadas neste portfólio.</p>
+    </div>
+
+    <!-- VISÃO GERAL DO PROJETO -->
+    <section class="section" style="padding-top:0;">
+      <p class="section-label">Visão Geral</p>
+      <h2 style="margin-bottom:20px;">Sobre este projeto</h2>
+      <p style="margin-bottom:24px; max-width:680px;">
+        Este portfólio foi desenvolvido como Atividade A3 da disciplina de <strong style="color:var(--text)">Interação Humano-Computador (IHC)</strong> do curso de Sistemas de Informação na UFMS. O objetivo foi construir um protótipo funcional que aplicasse na prática os conceitos de usabilidade, design de interface e experiência do usuário estudados ao longo do semestre.
+      </p>
+
+      <div class="summary-grid">
+        <div class="summary-item"><div class="summary-num">5</div>Páginas criadas</div>
+        <div class="summary-item"><div class="summary-num">10</div>Heurísticas aplicadas</div>
+        <div class="summary-item"><div class="summary-num">2</div>Tecnologias (HTML + CSS)</div>
+        <div class="summary-item"><div class="summary-num">1</div>Sistema de design unificado</div>
+      </div>
+
+      <h3 style="margin-bottom:16px;">Estrutura de navegação</h3>
+      <table class="design-table">
+        <thead>
+          <tr><th>Página</th><th>Arquivo</th><th>Conteúdo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Home</strong></td><td><span class="tag tag-gray">index.html</span></td><td>Introdução, projetos em destaque e atividades IHC do semestre</td></tr>
+          <tr><td><strong>Sobre</strong></td><td><span class="tag tag-gray">sobre.html</span></td><td>História pessoal, habilidades técnicas com ícones e interesses</td></tr>
+          <tr><td><strong>Currículo</strong></td><td><span class="tag tag-gray">curriculo.html</span></td><td>Formação acadêmica, experiência profissional e competências técnicas</td></tr>
+          <tr><td><strong>Contato</strong></td><td><span class="tag tag-gray">contato.html</span></td><td>Formulário com validação, redes sociais e informações de contato</td></tr>
+          <tr><td><strong>Ajuda</strong></td><td><span class="tag tag-gray">ajuda.html</span></td><td>Esta página — documentação de design e heurísticas aplicadas</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- SISTEMA DE DESIGN -->
+    <section class="section" style="padding-top:0;">
+      <p class="section-label">Sistema de Design</p>
+      <h2 style="margin-bottom:32px;">Decisões Visuais</h2>
+      <div class="grid-2" style="margin-bottom:36px;">
+        <div class="card">
+          <h3 style="margin-bottom:16px;">🎨 Paleta de Cores</h3>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; align-items:center; gap:12px; font-size:.875rem;">
+              <div style="width:32px;height:32px;border-radius:6px;background:#0d0d16;border:1px solid #27274a;"></div>
+              <div><p style="color:var(--text);margin:0;font-weight:500;">Background</p><p style="margin:0;font-size:.75rem;">#0d0d16</p></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:.875rem;">
+              <div style="width:32px;height:32px;border-radius:6px;background:#14142a;"></div>
+              <div><p style="color:var(--text);margin:0;font-weight:500;">Surface</p><p style="margin:0;font-size:.75rem;">#14142a</p></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:.875rem;">
+              <div style="width:32px;height:32px;border-radius:6px;background:#7c3aed;"></div>
+              <div><p style="color:var(--text);margin:0;font-weight:500;">Accent (Roxo)</p><p style="margin:0;font-size:.75rem;">#7c3aed</p></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; font-size:.875rem;">
+              <div style="width:32px;height:32px;border-radius:6px;background:#a78bfa;"></div>
+              <div><p style="color:var(--text);margin:0;font-weight:500;">Accent Light</p><p style="margin:0;font-size:.75rem;">#a78bfa</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:16px;">🔤 Tipografia</h3>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div>
+              <p style="font-family:'Sora',sans-serif; font-size:1.4rem; font-weight:700; color:var(--text); margin-bottom:4px;">Sora</p>
+              <p style="font-size:.8rem;">Usada em títulos, headings e elementos de destaque. Transmite modernidade e clareza.</p>
+            </div>
+            <div>
+              <p style="font-family:'DM Sans',sans-serif; font-size:1.1rem; color:var(--text); margin-bottom:4px;">DM Sans</p>
+              <p style="font-size:.8rem;">Usada em corpo de texto, parágrafos e elementos de interface. Alta legibilidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- HEURÍSTICAS DE NIELSEN -->
+    <section class="section" style="padding-top:0; padding-bottom:80px;">
+      <p class="section-label">Usabilidade</p>
+      <h2 style="margin-bottom:10px;">As 10 Heurísticas de Nielsen</h2>
+      <p style="margin-bottom:40px; max-width:600px;">Cada uma das 10 heurísticas de Nielsen foi identificada e aplicada neste projeto. Abaixo está a descrição de cada uma e onde pode ser localizada no portfólio.</p>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">1</div>
+        <h3 class="heuristic-title">Visibilidade do Status do Sistema</h3>
+        <p class="heuristic-desc">O sistema deve sempre informar o usuário sobre o que está acontecendo, fornecendo feedback adequado em tempo razoável.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          O item de navegação da página atual é destacado com cor roxa e fundo diferenciado em todas as páginas. No formulário de contato, um feedback verde de confirmação aparece após o envio da mensagem.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">2</div>
+        <h3 class="heuristic-title">Correspondência entre o Sistema e o Mundo Real</h3>
+        <p class="heuristic-desc">O sistema deve falar a linguagem do usuário, usando palavras, frases e conceitos familiares ao usuário, em vez de termos técnicos.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          Todo o conteúdo está em português do Brasil. Ícones universais são usados para representar conceitos (🐙 para GitHub, 📍 para localização, ⬇ para download). Os rótulos do menu são palavras simples e diretas.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">3</div>
+        <h3 class="heuristic-title">Controle e Liberdade do Usuário</h3>
+        <p class="heuristic-desc">Usuários frequentemente escolhem funções por engano e precisam de uma "saída de emergência" claramente marcada, sem ter que percorrer um diálogo extenso.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          A barra de navegação está fixada no topo (sticky) em todas as páginas, permitindo que o usuário navegue livremente para qualquer seção a qualquer momento, sem precisar usar o botão "voltar" do navegador.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">4</div>
+        <h3 class="heuristic-title">Consistência e Padrões</h3>
+        <p class="heuristic-desc">Usuários não devem ter que se perguntar se diferentes palavras, situações ou ações significam a mesma coisa. Siga as convenções da plataforma.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          Todas as 5 páginas compartilham o mesmo cabeçalho de navegação, rodapé, paleta de cores, tipografia e sistema de grid. Um arquivo CSS único (style.css) garante que todos os elementos visuais sejam consistentes.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">5</div>
+        <h3 class="heuristic-title">Prevenção de Erros</h3>
+        <p class="heuristic-desc">Ainda melhor que boas mensagens de erro é um design cuidadoso que previne que problemas ocorram em primeiro lugar.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          O formulário de contato usa o atributo <code>required</code> em todos os campos obrigatórios e o tipo <code>type="email"</code> para o campo de e-mail, prevenindo envios incompletos ou com formatos inválidos antes da submissão.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">6</div>
+        <h3 class="heuristic-title">Reconhecimento em Vez de Memorização</h3>
+        <p class="heuristic-desc">Minimize a carga de memória do usuário tornando objetos, ações e opções visíveis. O usuário não deve ter que se lembrar de informações de uma parte da interface para outra.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          O menu de navegação com os nomes de todas as páginas está sempre visível no topo. O item ativo está visualmente destacado, então o usuário sempre sabe onde está sem precisar memorizar a estrutura do site.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">7</div>
+        <h3 class="heuristic-title">Flexibilidade e Eficiência de Uso</h3>
+        <p class="heuristic-desc">Aceleradores, invisíveis para o usuário novato, podem frequentemente acelerar a interação para o usuário experiente, de modo que o sistema possa atender tanto a usuários inexperientes quanto a experientes.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          Os botões de CTA na Home ("Ver Currículo" e "Entrar em Contato") permitem que usuários que já conhecem o portfólio naveguem diretamente à página desejada sem passar por seções intermediárias.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">8</div>
+        <h3 class="heuristic-title">Estética e Design Minimalista</h3>
+        <p class="heuristic-desc">Diálogos não devem conter informações irrelevantes ou raramente necessárias. Cada unidade extra de informação compete com as unidades relevantes de informação.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          O layout usa espaçamento generoso entre seções, hierarquia tipográfica clara e não apresenta elementos decorativos desnecessários. Informações estão organizadas em cards e seções com propósito definido, sem poluição visual.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">9</div>
+        <h3 class="heuristic-title">Ajuda para Reconhecer, Diagnosticar e Recuperar Erros</h3>
+        <p class="heuristic-desc">Mensagens de erro devem ser expressas em linguagem simples, indicar precisamente o problema e sugerir uma solução de forma construtiva.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          No formulário de contato, ao tentar submeter com campos vazios, o navegador exibe mensagens nativas em linguagem clara. O campo de e-mail valida o formato automaticamente. O botão de "Baixar PDF" no Currículo exibe um alerta explicativo em vez de falhar silenciosamente.
+        </div>
+      </div>
+
+      <div class="heuristic-card">
+        <div class="heuristic-number">10</div>
+        <h3 class="heuristic-title">Ajuda e Documentação</h3>
+        <p class="heuristic-desc">Mesmo que seja melhor que o sistema possa ser usado sem documentação, pode ser necessário fornecer ajuda e documentação. Qualquer informação deve ser fácil de pesquisar.</p>
+        <div class="heuristic-where">
+          <strong>📍 Onde está neste portfólio</strong>
+          Esta própria página cumpre esta heurística: documenta as decisões de design, explica a estrutura do projeto, apresenta o sistema de design visual e registra onde cada heurística foi aplicada, facilitando a avaliação e compreensão do protótipo.
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Gabriel Possas · Campo Grande, MS · Atividade A3 — IHC · UFMS</p>
+  </footer>
+
+</body>
+</html>

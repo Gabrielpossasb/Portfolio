@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Gabriel Possas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">GP<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+      <li><a href="ajuda.html">Ajuda</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-hero">
+      <p class="section-label">Contato</p>
+      <h1>Vamos conversar?</h1>
+      <p>Preencha o formulário ou me encontre nas redes sociais abaixo.</p>
+    </div>
+
+    <section class="section" style="padding-top:0; padding-bottom:80px;">
+      <div class="contact-grid">
+
+        <!-- FORMULÁRIO -->
+        <div>
+          <h2 style="margin-bottom:8px;">Envie uma mensagem</h2>
+          <p style="margin-bottom:32px; font-size:.9rem;">Todos os campos marcados com * são obrigatórios.</p>
+
+          <form onsubmit="handleSubmit(event)">
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div class="form-group">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto *</label>
+              <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?" required />
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Descreva sua mensagem..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:14px;">
+              Enviar mensagem ↗
+            </button>
+
+          </form>
+
+          <!-- Feedback de envio -->
+          <div id="feedback" style="display:none; margin-top:16px; background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.3); border-radius:10px; padding:16px; color:#34d399; font-size:.9rem;">
+            ✅ Mensagem enviada com sucesso! Responderei em breve.
+          </div>
+        </div>
+
+        <!-- REDES SOCIAIS -->
+        <div>
+          <h2 style="margin-bottom:24px;">Redes & Links</h2>
+          <div class="social-links">
+
+            <a href="https://github.com/Gabrielpossasb" target="_blank" class="social-link">
+              <span class="social-icon">🐙</span>
+              <div>
+                <p style="font-weight:600; font-size:.9rem;">GitHub</p>
+                <p style="font-size:.8rem; color:var(--text-muted);">github.com/Gabrielpossasb</p>
+              </div>
+              <span style="margin-left:auto; color:var(--text-muted); font-size:.85rem;">↗</span>
+            </a>
+
+            <a href="https://linkedin.com/in/gabriel-possas" target="_blank" class="social-link">
+              <span class="social-icon">💼</span>
+              <div>
+                <p style="font-weight:600; font-size:.9rem;">LinkedIn</p>
+                <p style="font-size:.8rem; color:var(--text-muted);">Gabriel Possas</p>
+              </div>
+              <span style="margin-left:auto; color:var(--text-muted); font-size:.85rem;">↗</span>
+            </a>
+
+            <a href="mailto:gabrielpossasb@gmail.com" class="social-link">
+              <span class="social-icon">✉️</span>
+              <div>
+                <p style="font-weight:600; font-size:.9rem;">E-mail</p>
+                <p style="font-size:.8rem; color:var(--text-muted);">gabrielpossasb@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+5567999359933" class="social-link">
+              <span class="social-icon">📱</span>
+              <div>
+                <p style="font-weight:600; font-size:.9rem;">Telefone</p>
+                <p style="font-size:.8rem; color:var(--text-muted);">+55 67 99935-9933</p>
+              </div>
+            </a>
+
+            <div class="social-link" style="cursor:default;">
+              <span class="social-icon">📍</span>
+              <div>
+                <p style="font-weight:600; font-size:.9rem;">Localização</p>
+                <p style="font-size:.8rem; color:var(--text-muted);">Campo Grande, MS — Brasil</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- INFO CARD -->
+          <div style="margin-top:24px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px;">
+            <p style="font-size:.8rem; color:var(--text-muted); line-height:1.7;">
+              💡 Estou aberto a colaborações em projetos de software e desenvolvimento. Sinta-se à vontade para entrar em contato sobre qualquer oportunidade.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Gabriel Possas · Campo Grande, MS · Feito com HTML & CSS</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('feedback').style.display = 'block';
+      e.target.reset();
+      e.target.querySelector('button').disabled = true;
+      e.target.querySelector('button').textContent = 'Enviado ✓';
+    }
+  </script>
+
+</body>
+</html>
