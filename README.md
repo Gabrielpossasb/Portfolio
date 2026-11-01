@@ -10,6 +10,14 @@ No ar em **[portfolio-gabrielpossasb.vercel.app](https://portfolio-gabrielpossas
 
 ---
 
+## Telas
+
+| Home | Projetos | Currículo |
+|:--:|:--:|:--:|
+| ![Home](docs/screenshots/home.png) | ![Projetos](docs/screenshots/projetos.png) | ![Currículo](docs/screenshots/curriculo.png) |
+
+---
+
 ## Páginas
 
 | Rota | Conteúdo |
