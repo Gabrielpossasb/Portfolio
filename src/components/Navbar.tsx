@@ -8,8 +8,7 @@ export default function Navbar() {
     { path: '/', label: 'Home' },
     { path: '/sobre', label: 'Sobre' },
     { path: '/curriculo', label: 'Currículo' },
-    { path: '/contato', label: 'Contato' },
-    { path: '/ajuda', label: 'Ajuda' }
+    { path: '/contato', label: 'Contato' }
   ]
 
   return (

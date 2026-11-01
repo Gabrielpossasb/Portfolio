@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
-import Help from './pages/Help'
 
 export default function App() {
   return (
@@ -15,7 +14,6 @@ export default function App() {
           <Route path="sobre" element={<About />} />
           <Route path="curriculo" element={<Resume />} />
           <Route path="contato" element={<Contact />} />
-          <Route path="ajuda" element={<Help />} />
         </Route>
       </Routes>
     </BrowserRouter>

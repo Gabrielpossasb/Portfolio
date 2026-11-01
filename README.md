@@ -1,35 +1,91 @@
-# 💼 Portfólio Pessoal — Gabriel Possas
+# Portfólio — Gabriel Possas
 
-Este é o repositório do meu portfólio pessoal e profissional, desenvolvido para apresentar meus projetos, competências acadêmicas/profissionais e minha trajetória como desenvolvedor.
+Site pessoal com projetos, trajetória e formas de contato.
+No ar em **[portfolio-gabrielpossasb.vercel.app](https://portfolio-gabrielpossasb.vercel.app)**.
 
-## 🚀 Tecnologias Utilizadas
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)
 
-- **Core:** [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool:** [Vite](https://vite.dev/)
-- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
-- **Roteamento:** [React Router](https://reactrouter.com/)
+---
 
-## 📂 Estrutura do Projeto
+## Páginas
 
-O projeto conta com as seguintes seções:
-- **Início:** Apresentação rápida e destaques de projetos e atividades de IHC.
-- **Sobre mim:** Minha história, trajetória na programação, stack técnica e interesses.
-- **Currículo:** Formação acadêmica, experiência profissional, projetos de estudo e competências.
-- **Contato:** Formulário de envio de mensagens e links de redes sociais.
-- **Ajuda:** Detalhes sobre a disciplina de IHC (Interação Humano-Computador) e heurísticas de usabilidade aplicadas.
+| Rota | Conteúdo |
+|---|---|
+| `/` | Apresentação e projetos |
+| `/sobre` | Trajetória, stack e interesses |
+| `/curriculo` | Formação, experiência e competências |
+| `/contato` | Formulário e redes sociais |
 
-## 💻 Como Executar Localmente
+---
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Gabrielpossasb/Portfolio.git
-   ```
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-3. Execute o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-4. Acesse o endereço indicado no terminal (geralmente `http://localhost:5173`).
+## Decisões técnicas
+
+**Formulário sem backend.** O contato usa EmailJS, que envia direto do
+navegador. Evita manter um servidor no ar só para receber mensagem, em um site
+que de resto é estático.
+
+**Tema por variáveis.** As cores e fontes ficam em tokens CSS consumidos pelo
+Tailwind 4, então o tema muda em um lugar só, sem caçar classe por componente.
+
+**SPA com rotas reais.** React Router 7 com rewrite na Vercel, para que
+`/curriculo` funcione em acesso direto e não apenas por navegação interna.
+
+---
+
+## Stack
+
+| | |
+|---|---|
+| Front-end | React 19, TypeScript, React Router 7 |
+| Estilo | Tailwind CSS 4, PostCSS |
+| Build | Vite |
+| Formulário | EmailJS |
+| Qualidade | ESLint, TypeScript strict |
+| Deploy | Vercel, publicação a cada push na `main` |
+
+---
+
+## Como rodar
+
+Requer Node.js 20 ou superior.
+
+```bash
+git clone https://github.com/Gabrielpossasb/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
+```
+
+Abre em `http://localhost:5173`.
+
+| Comando | O que faz |
+|---|---|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Checagem de tipos + build em `dist/` |
+| `npm run preview` | Serve o build local |
+| `npm run lint` | ESLint |
+
+### Variáveis de ambiente
+
+O formulário de contato precisa das credenciais do EmailJS em um `.env` na raiz:
+
+```
+VITE_EMAILJS_SERVICE_ID=
+VITE_EMAILJS_TEMPLATE_ID=
+VITE_EMAILJS_PUBLIC_KEY=
+```
+
+---
+
+## Estrutura
+
+```
+src/
+├── components/   # Navbar, Footer, Layout
+├── pages/        # uma por rota
+├── App.tsx       # rotas
+└── index.css     # tokens de tema
+```

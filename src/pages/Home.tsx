@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   const projects = [
     {
+      icon: '🍊',
+      title: 'Polpa Santa Helena',
+      description: 'Catálogo online de uma distribuidora de polpas de fruta, com pedido direto pelo WhatsApp. Inclui pipeline próprio de processamento de imagens em Node com sharp.',
+      github: 'https://github.com/Gabrielpossasb/Polpa_Santa_Helena',
+      demo: 'https://polpasantahelena.com.br',
+      tags: ['React 19', 'TypeScript', 'Tailwind 4', 'Vite']
+    },
+    {
       icon: '🤖',
       title: 'JARVIS — Assistente WhatsApp',
       description: 'Assistente pessoal via WhatsApp com inteligência artificial. Gerencia tarefas, controla finanças e importa extratos bancários de forma conversacional.',
@@ -33,22 +41,6 @@ export default function Home() {
       github: 'https://github.com/Gabrielpossasb/Portfolio',
       demo: 'https://portfolio-gabrielpossasb.vercel.app',
       tags: ['React', 'TypeScript', 'TailwindCSS', 'Vercel']
-    }
-  ]
-
-  const activities = [
-    {
-      icon: '📋',
-      date: '08/04/2026 · A1',
-      title: 'Análise de Interface — WhatsApp',
-      description: 'Análise crítica da interface do WhatsApp, identificando 3 características positivas (usabilidade, feedback do sistema, eficiência na comunicação) e 3 negativas (excesso de notificações, organização das conversas e busca de mensagens).'
-    },
-    {
-      icon: '🌐',
-      date: '15/06/2026 · A3',
-      title: 'Portfólio Web — Este projeto',
-      description: 'Protótipo de portfólio pessoal em HTML/CSS com 5 páginas e heurísticas de usabilidade',
-      highlighted: true
     }
   ]
 
@@ -150,47 +142,6 @@ export default function Home() {
                       {tag}
                     </span>
                   ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* IHC ACTIVITIES SECTION */}
-      <section className="py-20 px-4">
-        <div className="max-w-[1080px] w-full mx-auto px-[clamp(20px,5vw,40px)]">
-          <p className="text-[0.75rem] font-semibold tracking-[2.5px] uppercase text-accent-light mb-2.5">
-            IHC — 2026.1
-          </p>
-          <h2 className="text-3xl font-bold font-sora text-text mb-3">Atividades da Disciplina</h2>
-          <p className="text-text-muted max-w-[520px] mb-10">
-            Atividades avaliativas desenvolvidas ao longo do semestre na disciplina de Interação Humano-Computador.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {activities.map((activity) => (
-              <div
-                key={activity.title}
-                className={`bg-surface border rounded-card p-6 flex items-start gap-4 transition-all duration-200 ${
-                  activity.highlighted
-                    ? 'border-accent-light/40'
-                    : 'border-border'
-                }`}
-              >
-                <div className="w-12 h-12 bg-accent-dim rounded-lg flex items-center justify-center text-[1.4rem] shrink-0">
-                  {activity.icon}
-                </div>
-                <div>
-                  <p className="text-[0.75rem] text-accent-light font-semibold mb-0.5">
-                    {activity.date}
-                  </p>
-                  <p className="font-bold text-[0.95rem] text-text font-sora mb-1">
-                    {activity.title}
-                  </p>
-                  <p className="text-[0.8rem] text-text-muted leading-relaxed">
-                    {activity.description}
-                  </p>
                 </div>
               </div>
             ))}
