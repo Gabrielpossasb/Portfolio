@@ -41,10 +41,11 @@ export default function Contact() {
         )
         setStatus('success')
         setFormData({ nome: '', email: '', assunto: '', mensagem: '' })
-      } catch (error: any) {
+      } catch (error) {
         console.error('EmailJS Error:', error)
         setStatus('error')
-        setErrorMessage(error?.text || 'Ocorreu um erro ao enviar o e-mail. Tente novamente mais tarde.')
+        const emailJsError = error as { text?: string } | null;
+        setErrorMessage(emailJsError?.text || 'Ocorreu um erro ao enviar o e-mail. Tente novamente mais tarde.')
       }
     } else {
       // Simulate submission when EmailJS config is missing
