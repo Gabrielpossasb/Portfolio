@@ -45,24 +45,24 @@ export default function About() {
       <section className="py-6 mb-12">
         <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-14 items-start">
           <div className="flex flex-col items-center gap-4">
-            <div className="w-[180px] h-[180px] rounded-full bg-gradient-to-br from-accent to-indigo-600 flex items-center justify-center text-[4.5rem] border-4 border-border shadow-lg">
-              👨‍💻
+            <div className="w-[180px] h-[180px] rounded-full bg-surface border border-border flex items-center justify-center">
+              <span className="font-sora text-[3.4rem] font-bold text-accent-light tracking-tight">GP</span>
             </div>
             <div className="text-center">
               <p className="font-bold text-base text-text">Gabriel Possas</p>
-              <p className="text-xs text-text-muted mt-0.5">Estudante · Dev</p>
+              <p className="text-xs text-text-muted mt-1">Desenvolvedor Front-End e Mobile</p>
             </div>
           </div>
           <div>
             <h2 className="text-2xl font-bold font-sora text-text mb-5">Minha história</h2>
             <p className="text-text-muted leading-relaxed mb-4">
-              🙋‍♂️ Olá! Me chamo <strong>Gabriel Abraão Possas Borges</strong>, sou de Campo Grande - MS. Concluí o ensino médio técnico na Escola do SESI / SENAI, tendo como curso o de <strong>Técnico em Redes de Computadores</strong>, onde meu contato com infraestrutura despertou minha paixão pela programação.
+              Sou <strong>Gabriel Abraão Possas Borges</strong>, desenvolvedor em Campo Grande, MS. Minha formação começou no ensino médio técnico em <strong>Redes de Computadores</strong>, na Escola do SESI / SENAI, onde o contato com infraestrutura me levou à programação.
             </p>
             <p className="text-text-muted leading-relaxed mb-4">
-              📚 Comecei a estudar programação em 2019 e, conforme me aprofundava, me voltei para o desenvolvimento front-end, especializando-me em <strong>React.js, TypeScript e Next.js</strong>.
+              Estudo programação desde 2019. Com o tempo me direcionei ao desenvolvimento front-end, com foco em <strong>React.js, TypeScript e Next.js</strong>.
             </p>
             <p className="text-text-muted leading-relaxed">
-              🎓 Hoje, após muitos projetos práticos desenvolvidos (incluindo assistentes inteligentes com IA e sistemas web/mobile), estou cursando o bacharelado em <strong>Sistemas de Informação na UFMS</strong> (ingresso em 2024) e estou à procura de uma oportunidade de trabalho para colocar meus conhecimentos em prática, colaborar em projetos reais e iniciar minha trajetória profissional!
+              Hoje curso o bacharelado em <strong>Sistemas de Informação na UFMS</strong>, iniciado em 2024, e desenvolvo projetos próprios que incluem assistentes com IA e sistemas web e mobile. Busco uma oportunidade para contribuir em projetos reais e iniciar minha trajetória profissional.
             </p>
           </div>
         </div>
