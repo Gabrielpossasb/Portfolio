@@ -1,7 +1,7 @@
 # Portfólio — Gabriel Possas
 
 Site pessoal com projetos, trajetória e formas de contato.
-No ar em **[portfolio-gabrielpossasb.vercel.app](https://portfolio-gabrielpossasb.vercel.app)**.
+No ar em **[portfolio-gabrielpossasb.vercel.app](https://portfolio-azure-sigma-57.vercel.app/)**.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
