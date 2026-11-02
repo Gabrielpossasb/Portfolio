@@ -4,6 +4,7 @@ export default function Home() {
   const projects = [
     {
       icon: '🍊',
+      logo: '/projects/polpa.png',
       title: 'Polpa Santa Helena',
       description: 'Catálogo online de uma distribuidora de polpas de fruta, com pedido direto pelo WhatsApp. Inclui pipeline próprio de processamento de imagens em Node com sharp.',
       github: 'https://github.com/Gabrielpossasb/Polpa_Santa_Helena',
@@ -12,35 +13,30 @@ export default function Home() {
     },
     {
       icon: '🤖',
-      title: 'JARVIS — Assistente WhatsApp',
-      description: 'Assistente pessoal via WhatsApp com inteligência artificial. Gerencia tarefas, controla finanças e importa extratos bancários de forma conversacional.',
+      logo: '/projects/jarvis.png',
+      title: 'JARVIS — Assistente Pessoal com IA',
+      description: 'Assistente que recebe texto, áudio, imagem ou PDF e devolve dado organizado. Gerencia tarefas, lançamentos financeiros, estoque da loja e a rotina acadêmica: matérias, provas e atividades. Acessível pelo WhatsApp e por interface web.',
       github: 'https://github.com/Gabrielpossasb/jarvis-whatsapp',
       demo: null,
-      tags: ['Node.js', 'GPT-4o-mini', 'Supabase', 'Railway', 'React']
+      tags: ['Node.js', 'PostgreSQL', 'React', 'LLM', 'Railway']
     },
     {
-      icon: '🎓',
-      title: 'JARVIS Acadêmico',
-      description: 'Assistente acadêmico inteligente desenvolvido com Python, utilizando RAG, Tool Calling e o modelo Gemma 12B.',
-      github: 'https://github.com/Gabrielpossasb/JARVIS-Academico',
+      icon: '💬',
+      logo: null,
+      title: 'Motor de Atendimento',
+      description: 'Atendimento automatizado por WhatsApp para comércio local, com painel de operação: taxa de resolução, custo por resposta, lacunas na base de conhecimento e fila de handoff para atendente humano.',
+      github: 'https://github.com/Gabrielpossasb/MOTOR_DE_ATENDIMENTO_POR_IA',
       demo: null,
-      tags: ['Python', 'RAG', 'Gemma 12B']
+      tags: ['Node.js', 'LLM', 'WhatsApp API', 'Painel web']
     },
     {
-      icon: '📰',
-      title: 'Gest News',
-      description: 'Portal de notícias desenvolvido em React e TypeScript, utilizando a API do jornal New York Times.',
-      github: 'https://github.com/Gabrielpossasb/Gest-News',
-      demo: 'https://gest-news.vercel.app/',
-      tags: ['React', 'TypeScript', 'API NYT']
-    },
-    {
-      icon: '💼',
-      title: 'Portfólio Pessoal',
-      description: 'Portfólio profissional desenvolvido em React com TypeScript e TailwindCSS, hospedado na Vercel com deploy contínuo via GitHub.',
-      github: 'https://github.com/Gabrielpossasb/Portfolio',
-      demo: 'https://portfolio-gabrielpossasb.vercel.app',
-      tags: ['React', 'TypeScript', 'TailwindCSS', 'Vercel']
+      icon: '🎬',
+      logo: null,
+      title: 'Resumidor de Vídeo com IA',
+      description: 'Transforma vídeo longo em resumo estruturado: busca a legenda, divide em blocos, resume cada bloco com um modelo leve e consolida com um modelo mais forte, reduzindo custo de token sem perder o contexto do todo.',
+      github: 'https://github.com/Gabrielpossasb/RESUMIDOR_DE_VIDEO',
+      demo: null,
+      tags: ['Node.js', 'LLM', 'Pipeline', 'YouTube API']
     }
   ]
 
@@ -108,7 +104,16 @@ export default function Home() {
                 className="bg-bg border border-border rounded-card p-6 flex flex-col gap-3.5 transition-all duration-200 hover:border-accent-light/45 hover:-translate-y-[3px]"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-[1.6rem]">{project.icon}</span>
+                  {project.logo ? (
+                    <img
+                      src={project.logo}
+                      alt=""
+                      className="w-9 h-9 object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span className="text-[1.6rem]">{project.icon}</span>
+                  )}
                   <div className="flex gap-2">
                     <a
                       href={project.github}
