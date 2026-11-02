@@ -82,6 +82,12 @@ export default function Contact() {
       url: 'tel:+5567999359933'
     },
     {
+      icon: '💬',
+      name: 'WhatsApp',
+      handle: '+55 67 99935-9933',
+      url: 'https://wa.me/5567999359933'
+    },
+    {
       icon: '📍',
       name: 'Localização',
       handle: 'Campo Grande, MS — Brasil',

@@ -5,10 +5,13 @@ export default function About() {
     { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
     { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
     { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactnative/reactnative-original.svg' },
+    { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
     { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
     { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
     { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
     { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+    { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
     { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
     { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
     { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' }
@@ -53,13 +56,10 @@ export default function About() {
           <div>
             <h2 className="text-2xl font-bold font-sora text-text mb-5">Minha história</h2>
             <p className="text-text-muted leading-relaxed mb-4">
-              🙋‍♂️ Olá! Me chamo <strong>Gabriel Abraão Possas Borges</strong>, sou de Campo Grande - MS e tenho 19 anos. Concluí o ensino médio técnico na Escola do Sesi, tendo como curso o de <strong>Técnico em Redes de Computadores</strong>, onde meu contato com infraestrutura despertou minha paixão pela programação.
+              🙋‍♂️ Olá! Me chamo <strong>Gabriel Abraão Possas Borges</strong>, sou de Campo Grande - MS. Concluí o ensino médio técnico na Escola do SESI / SENAI, tendo como curso o de <strong>Técnico em Redes de Computadores</strong>, onde meu contato com infraestrutura despertou minha paixão pela programação.
             </p>
             <p className="text-text-muted leading-relaxed mb-4">
-              📚 Desde o primeiro ano me interessei por programação, iniciando meus estudos em 2019 na plataforma da Danki Code, na qual adquiri a certificação do curso de Desenvolvimento de Aplicativos.
-            </p>
-            <p className="text-text-muted leading-relaxed mb-4">
-              💻 Conforme me aprofundava, comecei a ter interesse pelo desenvolvimento front-end e conheci a plataforma Rocketseat, onde concluí as 3 trilhas do bootcamp Discover e, posteriormente, adquiri o Ignite, especializando-me principalmente em <strong>React.js, TypeScript e Next.js</strong>, dentre muitas outras bibliotecas e tecnologias.
+              📚 Comecei a estudar programação em 2019 e, conforme me aprofundava, me voltei para o desenvolvimento front-end, especializando-me em <strong>React.js, TypeScript e Next.js</strong>.
             </p>
             <p className="text-text-muted leading-relaxed">
               🎓 Hoje, após muitos projetos práticos desenvolvidos (incluindo assistentes inteligentes com IA e sistemas web/mobile), estou cursando o bacharelado em <strong>Sistemas de Informação na UFMS</strong> (ingresso em 2024) e estou à procura de uma oportunidade de trabalho para colocar meus conhecimentos em prática, colaborar em projetos reais e iniciar minha trajetória profissional!
